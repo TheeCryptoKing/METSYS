@@ -1,5 +1,6 @@
-from sqlalchemy import create_engine, text
+from sqlalchemy import create_engine, text, select
 from sqlalchemy.orm import Session
+import ipdb
 from player import *
 
 # Need a seed.py, a cli.py, a debug.py
@@ -21,11 +22,12 @@ if __name__ == '__main__':
     
     def declare_player():
     # MVP = Str, Spe, hp, xp, Weapon
-        Slayer = Player(name="Slayer", Strength=10, Speed=15, Weapon="Dual Katanas", hp=80, xp=0)
-        Warrior = Player(name="Warrior", Strength=15, Speed=10, Weapon="Champions Broadsword", hp=80, xp=0)
-        Mage = Player(name="Mage", Strength=15, Speed=10, Weapon="Surasshu", hp=80, xp=0)
+        Slayer = Player(name="Slayer", location_id=1, Strength=10, Speed=15, Weapon="Dual Katanas", hp=80, xp=0)
+        Warrior = Player(name="Warrior", location_id=1, Strength=15, Speed=10, Weapon="Champions Broadsword", hp=80, xp=0)
+        Mage = Player(name="Mage", location_id=1, Strength=15, Speed=10, Weapon="Surasshu", hp=80, xp=0)
         session.add_all([Slayer , Warrior, Mage])
         session.commit()
+
 
     # def declare_FF_enemy():
     # # MVP = hp, xp_given, intellect, speed, strength, weapon
@@ -64,14 +66,21 @@ if __name__ == '__main__':
     #     session.commit()
     
 
+
     delete_data()
     declare_player()
     # declare_FF_enemy()
     declare_locations()
     # ability_declare()
-
-
+    where_you_at = session.scalars(
+        select(Player, Location).join(Player.location)
+    )
+    for player in where_you_at:
+        print(f"{player.name} | {player.location.name}")
+    ipdb.set_trace()
+ 
     session.close()
+    # put ipdb where i want to play with it
 
 
 
