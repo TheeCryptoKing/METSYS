@@ -1,33 +1,66 @@
-from sqlalchemy.orm import DeclarativeBase,Mapped,mapped_column,relationship
-from sqlalchemy import ForeignKey
+from sqlalchemy.orm import declarative_base, relationship
+from sqlalchemy import Column, ForeignKey, Integer, Float, String, create_engine
 
-class Base(DeclarativeBase):
-    pass
+engine = create_engine('sqlite:///game.db')
+Base = declarative_base()
 
 class Player(Base):
     __tablename__ = 'player'
-    id:Mapped[int] = mapped_column(primary_key=True)
-    name:Mapped[str] = mapped_column(nullable=True)
-    location_id:Mapped[int] = mapped_column(primary_key=True)
-    
-    location:Mapped[str["Location"]] = relationship(back_populates='player')
-    enemy:Mapped[str["Enemy"]] = relationship(back_populates='player')
+    # Needs to be declared
+    # STRETCH xp,hp, defense, attack, Agility 
+    # Also define moves 
+    # One of 3 player need callback conditioal for each can run a if or elif and use boolean for long standing T or F
+    # need Var for class chosen and Keep truthy thorughout, Persisting 
+    # define moves in python callback function? has to run sometype of action and interact with enempy health bar
+    # Moves, Strength, Speed, 
+    # Class:Mapped[float] = mapped_column(Float) have to set with Conditional 
+    # Might need class stats
+    # STRETCH wallet:[int] = mapped_column(Integer, default=0) 
+    id = Column(Integer, primary_key=True)
+    name = Column(String, nullable=True)
+    location_id = Column(Integer, ForeignKey('location.id'))
+    location = relationship("Location", back_populates='player')
+    enemy = relationship("Enemy", back_populates='player')
+    # Stats
+    Strength = Column(Integer)
+    Speed = Column(Integer)
+    Weapon = Column(String, nullable=True)
+    hp = Column(Float, default=100)
+    xp = Column(Integer, default=0)
+    abilities = relationship("Abilities", back_populates="player")
 
 class Location(Base):
     __tablename__ = 'location'
-    id:Mapped[int] = mapped_column(primary_key=True)
-    name:Mapped[str] = mapped_column(nullable=True)
-    players:Mapped[str["Player"]] = relationship(back_populates='location')
-    enemies:Mapped[str["Enemy"]] = relationship(back_populates='location')
+    # MVP = FF, Guild, Home
+    # need acces to foreignkeys to populate?
+    id = Column(Integer, primary_key=True)
+    name = Column(String, nullable=True)
+    player = relationship("Player", back_populates='location')
+    enemies = relationship("Enemy", back_populates='location')
 
 class Enemy(Base):
+    # hp, xp given, Int, Speed, Strength, 
     __tablename__ = 'enemy'
-    id:Mapped[int] = mapped_column(primary_key=True)
-    name:Mapped[str] = mapped_column(nullable=True)
-    location_id:Mapped[int] = mapped_column(primary_key=True)
-    
-    location:Mapped[str["Location"]] = relationship(back_populates='enemy')
-    player_id:Mapped[int] = mapped_column(ForeignKey('player.id'),nullable=False)
-    
-    players:Mapped[str["Player"]] = relationship(back_populates='enemy')
-    
+    id = Column(Integer, primary_key=True)
+    name = Column(String, nullable=True)
+    location_id = Column(Integer, ForeignKey('location.id'))
+    location = relationship("Location", back_populates='enemies')
+    # Stats
+    hp = Column(Float, default=100)
+    xp_given = Column(Integer)
+    intellect = Column(Integer)
+    speed = Column(Integer)
+    strength = Column(Integer)
+    weapon = Column(String, nullable=True)
+    player_id = Column(Integer, ForeignKey('player.id'), nullable=False)
+    player = relationship("Player", back_populates='enemy')
+
+class Abilities(Base):
+    # one-to-one
+    __tablename__ = 'ability'
+    id = Column(Integer, primary_key=True)
+    ability_name = Column(String, nullable=True)
+    # weapon_ability = Column(String, default=None)
+    # companion_ability = Column(String, default=None)
+    player_id = Column(Integer, ForeignKey('player.id'), nullable=False)
+    player = relationship("Player", back_populates='abilities')
