@@ -5,6 +5,15 @@ from sqlalchemy import Column, ForeignKey, Integer, Float, String, create_engine
 engine = create_engine('sqlite:///game.db')
 Base = declarative_base()
 
+class Location(Base):
+    __tablename__ = 'location'
+    # MVP = FF, Guild, Home
+    # need acces to foreignkeys to populate?
+    id = Column(Integer, primary_key=True)
+    name = Column(String, nullable=True)
+    player = relationship("Player", back_populates='location')
+    # enemies = relationship("Enemy", back_populates='location')
+    
 class Player(Base):
     __tablename__ = 'player'
     # Needs to be declared
@@ -19,8 +28,8 @@ class Player(Base):
     # STRETCH wallet:[int] = mapped_column(Integer, default=0) 
     id = Column(Integer, primary_key=True)
     name = Column(String, nullable=True)
-    # location_id = Column(Integer, ForeignKey('location.id'))
-    # location = relationship("Location", back_populates='player')
+    location_id = Column(Integer, ForeignKey('location.id'))
+    location = relationship("Location", back_populates='player')
     # enemy = relationship("Enemy", back_populates='player')
     # Stats
     Strength = Column(Integer)
@@ -35,8 +44,8 @@ class Player(Base):
 #     __tablename__ = 'enemy'
 #     id = Column(Integer, primary_key=True)
 #     name = Column(String, nullable=True)
-#     location_id = Column(Integer, ForeignKey('location.id'))
-#     location = relationship("Location", back_populates='enemies')
+#     # location_id = Column(Integer, ForeignKey('location.id'))
+#     # location = relationship("Location", back_populates='enemies')
 #     # Stats
 #     hp = Column(Float, default=100)
 #     xp_given = Column(Integer)
@@ -44,25 +53,18 @@ class Player(Base):
 #     speed = Column(Integer)
 #     strength = Column(Integer)
 #     weapon = Column(String, nullable=True)
-#     player_id = Column(Integer, ForeignKey('player.id'), nullable=False)
+#     player_id = Column(Integer, ForeignKey('player.id'), nullable=True)
 #     player = relationship("Player", back_populates='enemy')
 
-# class Location(Base):
-#     __tablename__ = 'location'
-#     # MVP = FF, Guild, Home
-#     # need acces to foreignkeys to populate?
-#     id = Column(Integer, primary_key=True)
-#     name = Column(String, nullable=True)
-#     player = relationship("Player", back_populates='location')
-#     enemies = relationship("Enemy", back_populates='location')
+
 
 
 # class Abilities(Base):
-#     # one-to-one
-#     __tablename__ = 'ability'
-#     id = Column(Integer, primary_key=True)
-#     ability_name = Column(String, nullable=True)
-#     # weapon_ability = Column(String, default=None)
-#     # companion_ability = Column(String, default=None)
-#     player_id = Column(Integer, ForeignKey('player.id'), nullable=False)
-#     player = relationship("Player", back_populates='abilities')
+    # one-to-one
+    # __tablename__ = 'ability'
+    # id = Column(Integer, primary_key=True)
+    # ability_name = Column(String, nullable=True)
+    # weapon_ability = Column(String, default=None)
+    # companion_ability = Column(String, default=None)
+    # player_id = Column(Integer, ForeignKey('player.id'), nullable=False)
+    # player = relationship("Player", back_populates='abilities')
