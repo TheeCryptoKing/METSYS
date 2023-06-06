@@ -14,11 +14,11 @@ Base.metadata.create_all(engine)
 if __name__ == '__main__':
     session = Session(bind=engine)
     # location_id? enemy? location? id = no data, xp and hp being rewriten?
-    def delete_data():
-        session.query(Player).delete()
-        session.query(Location).delete()
-        # session.query(Enemy).delete()
-        session.commit()
+    # conditionals for data
+    session.query(Player).delete()
+    session.query(Location).delete()
+    # session.query(Enemy).delete()
+    session.commit()
     
     def declare_player():
     # MVP = Str, Spe, hp, xp, Weapon
@@ -53,6 +53,7 @@ if __name__ == '__main__':
     #         Abilities(ability_name="Starburst Stream")
     #     ]
     #     Warrior = session.query(Player).filter_by(name="Warrior").first()
+    #     # session.bulksaveobjects
     #     Warrior.abilities = [
     #         Abilities(ability_name="Whirlwind Strike"),
     #         Abilities(ability_name="Headstrong")
@@ -62,23 +63,55 @@ if __name__ == '__main__':
     #         Abilities(ability_name="Serpentine Slash"),
     #         Abilities(ability_name="Expelliarmus")
     #     ]
-    #     session.add_all([Slayer.abilities, Warrior.abilities, Mage.abilities])
+    #     session.bulk_save_objects(Slayer.abilities)
+    #     session.bulk_save_objects(Warrior.abilities)
+    #     session.bulk_save_objects(Mage.abilities)
+    #     # session.bulk_save_objects([Slayer.abilities, Warrior.abilities, Mage.abilities])
+    #     # session.add_all([Slayer.abilities, Warrior.abilities, Mage.abilities])
     #     session.commit()
     
 
+    # Current_player = session.scalars(Player.id[1])
+    # player_choice = input("Choose a player (Slayer, Mage, Warrior): ") 
+    # line needs to be in cli.py
+    # if player_choice == "Mage":
+    #     session.query(Player).get(3)
+    #     return player_choice
+    # # elif player_choice
+    # player_classes = {
+    #     "Slayer": Player.name.Slayer,
+    #     "Warrior": Player.name.Warrior,
+    #     "Mage": Player.name.Mage
+    # }
+    # player_class = player_classes.get(player_choice)
 
-    delete_data()
+    # print(current_player.id)
+    # if current_player:
+    #     print("Current Player:", current_player.name)
+    # else:
+    #     print("Invalid input.")
+
+    # needed
+    # currentLocation
+    # currentabilities
+
     declare_player()
     # declare_FF_enemy()
     declare_locations()
     # ability_declare()
+    
+    player_choice= "Mage"
+    current_player = session.scalars(select(Player).where(Player.name.like(player_choice))).first()
+    # if remains true or
     where_you_at = session.scalars(
         select(Player, Location).join(Player.location)
     )
+
     for player in where_you_at:
-        print(f"{player.name} | {player.location.name}")
+        if current_player.name == player.name:
+            print(f"{player.name} | {player.location.name}")
+    
     ipdb.set_trace()
- 
     session.close()
     # put ipdb where i want to play with it
 

@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from lib.player import *
+from player import *
 
 
 if __name__ == '__main__':
