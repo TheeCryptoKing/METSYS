@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 sqlalchemy = "2.0.15"
 ipdb = "0.13.9"
+alembic = "*"
 pyinquirer = "*"
 prompt-toolkit = "*"
 

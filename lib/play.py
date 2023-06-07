@@ -1,5 +1,6 @@
 from pyfiglet import Figlet
 from termcolor import colored
+from art import hello_traveler
 
 
 print('\n'*10)
@@ -10,14 +11,15 @@ print('\t\t press enter to begin your adventure')
 ch = input('')
 if ch == '':
     print('\n'*17)
-    print(r"""
-         ^  ^  ^   ^      ___I_      ^  ^   ^  ^  ^   ^  ^
-        /|\/|\/|\ /|\    /\-_--\    /|\/|\ /|\/|\/|\ /|\/|\
-        /|\/|\/|\ /|\   /  \_-__\   /|\/|\ /|\/|\/|\ /|\/|\
-        /|\/|\/|\ /|\   |[]| [] |   /|\/|\ /|\/|\/|\ /|\/|\
-    """)
-    print('\n'*1)
-    import questions
+    # print(r"""
+    #      ^  ^  ^   ^      ___I_      ^  ^   ^  ^  ^   ^  ^
+    #     /|\/|\/|\ /|\    /\-_--\    /|\/|\ /|\/|\/|\ /|\/|\
+    #     /|\/|\/|\ /|\   /  \_-__\   /|\/|\ /|\/|\/|\ /|\/|\
+    #     /|\/|\/|\ /|\   |[]| [] |   /|\/|\ /|\/|\/|\ /|\/|\
+    # """)
+    # print('\n'*1)
+    from questions import *
+
     
   
 
