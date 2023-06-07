@@ -19,50 +19,50 @@ class Player(Base):
     # STRETCH wallet:[int] = mapped_column(Integer, default=0) 
     id = Column(Integer, primary_key=True)
     name = Column(String, nullable=True)
-    # location_id = Column(Integer, ForeignKey('location.id'))
-    # location = relationship("Location", back_populates='player')
-    # enemy = relationship("Enemy", back_populates='player')
+    location_id = Column(Integer, ForeignKey('location.id'))
+    location = relationship("Location", back_populates='player')
+    enemy = relationship("Enemy", back_populates='player')
     # Stats
     Strength = Column(Integer)
     Speed = Column(Integer)
     Weapon = Column(String, nullable=True)
     hp = Column(Float, default=100)
     xp = Column(Integer, default=0)
-    # abilities = relationship("Abilities", back_populates="player")
+    abilities = relationship("Abilities", back_populates="player")
 
-# class Enemy(Base):
-#     # hp, xp given, Int, Speed, Strength, 
-#     __tablename__ = 'enemy'
-#     id = Column(Integer, primary_key=True)
-#     name = Column(String, nullable=True)
-#     location_id = Column(Integer, ForeignKey('location.id'))
-#     location = relationship("Location", back_populates='enemies')
-#     # Stats
-#     hp = Column(Float, default=100)
-#     xp_given = Column(Integer)
-#     intellect = Column(Integer)
-#     speed = Column(Integer)
-#     strength = Column(Integer)
-#     weapon = Column(String, nullable=True)
-#     player_id = Column(Integer, ForeignKey('player.id'), nullable=False)
-#     player = relationship("Player", back_populates='enemy')
+class Enemy(Base):
+    # hp, xp given, Int, Speed, Strength, 
+    __tablename__ = 'enemy'
+    id = Column(Integer, primary_key=True)
+    name = Column(String, nullable=True)
+    location_id = Column(Integer, ForeignKey('location.id'))
+    location = relationship("Location", back_populates='enemies')
+    # Stats
+    hp = Column(Float, default=100)
+    xp_given = Column(Integer)
+    intellect = Column(Integer)
+    speed = Column(Integer)
+    strength = Column(Integer)
+    weapon = Column(String, nullable=True)
+    player_id = Column(Integer, ForeignKey('player.id'), nullable=False)
+    player = relationship("Player", back_populates='enemy')
 
-# class Location(Base):
-#     __tablename__ = 'location'
-#     # MVP = FF, Guild, Home
-#     # need acces to foreignkeys to populate?
-#     id = Column(Integer, primary_key=True)
-#     name = Column(String, nullable=True)
-#     player = relationship("Player", back_populates='location')
-#     enemies = relationship("Enemy", back_populates='location')
+class Location(Base):
+    __tablename__ = 'location'
+    # MVP = FF, Guild, Home
+    # need acces to foreignkeys to populate?
+    id = Column(Integer, primary_key=True)
+    name = Column(String, nullable=True)
+    player = relationship("Player", back_populates='location')
+    enemies = relationship("Enemy", back_populates='location')
 
 
-# class Abilities(Base):
-#     # one-to-one
-#     __tablename__ = 'ability'
-#     id = Column(Integer, primary_key=True)
-#     ability_name = Column(String, nullable=True)
-#     # weapon_ability = Column(String, default=None)
-#     # companion_ability = Column(String, default=None)
-#     player_id = Column(Integer, ForeignKey('player.id'), nullable=False)
-#     player = relationship("Player", back_populates='abilities')
+class Abilities(Base):
+    # one-to-one
+    __tablename__ = 'ability'
+    id = Column(Integer, primary_key=True)
+    ability_name = Column(String, nullable=True)
+    weapon_ability = Column(String, default=None)
+    companion_ability = Column(String, default=None)
+    player_id = Column(Integer, ForeignKey('player.id'), nullable=False)
+    player = relationship("Player", back_populates='abilities')

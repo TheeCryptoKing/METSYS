@@ -11,8 +11,6 @@ print('\t\t press enter to begin your adventure')
 ch = input('')
 if ch == '':
     print('\n'*17)
-    # print(hello_traveler)
-    # print('\n'*1)
     from questions import *
     
   

@@ -25,7 +25,6 @@ name_question = [
 
 
 name_answer = prompt(name_question, style=custom_styles)
-# name_answer = prompt(name_question)
 name = name_answer['name']
 
 introduction_questions = [
@@ -121,6 +120,13 @@ pathway_questions = [
 
 pathway_answers = prompt(pathway_questions, style=custom_styles)
 
+battle_questions = [
+    {
+        'type': 'input',
+        'name': 'intro battle',
+        'message': 'There is an ominous air around here.'
+    }
+]
 
 
 
