@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine, text, select
 from sqlalchemy.orm import Session
-import ipdb
+# import ipdb
 from player import *
 
 engine = create_engine("sqlite:///game.db", echo=True)
@@ -181,11 +181,11 @@ if __name__ == '__main__':
     dem_hero_attackTwo = session.scalars(
         select(Player, Abilities).join(Player.attack2)
     )
-    # # test data for PLAYER ABILITIES 
-    # for hero in dem_hero_attackOne:
-    #     print(f"{hero.name} | {hero.attack1.name}")
-    # for hero in dem_hero_attackTwo:
-    #     print(f"{hero.name} | {hero.attack2.name}")
+    # test data for PLAYER ABILITIES 
+    for hero in dem_hero_attackOne:
+        print(f"{hero.name} | {hero.attack1.name}")
+    for hero in dem_hero_attackTwo:
+        print(f"{hero.name} | {hero.attack2.name}")
         
 
     ################### JOIN ENEMY & ABILITES ##########################
