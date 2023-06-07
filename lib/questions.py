@@ -9,12 +9,16 @@ from art import (
                 forest_path,
                 pathway_view,
                 hello_traveler,
-                ominous_tree
+                ominous_tree,
+                blood_fairy,
+                dark_witch,
+                hype_for_battle
                 )
 
 from player import *
-from sqlalchemy import create_engine, update
+from sqlalchemy import create_engine, update, select
 from sqlalchemy.orm import sessionmaker
+
 engine = create_engine('sqlite:///game.db')
 Session = sessionmaker(bind=engine)
 session = Session()
@@ -43,6 +47,23 @@ custom_styles = style_from_dict(
     }
 )
 new_page = ('\n' * 1)
+
+
+
+
+
+# ((Player.name),(Player.hp),(Player.Strength),(Player.Speed),(Player.intellect), (Player)).all()
+
+
+
+# for player in players:
+#     name = player.name
+#     hp = player.hp
+#     Strength = player.Strength
+#     Speed = player.Speed
+#     Intellect = player.intellect
+#     Xp = player.xp
+
 name_question = [
     {
         'type': 'input',
@@ -69,7 +90,7 @@ guild_questions = [
     {
         'type': 'input',
         'name': 'base stats',
-        'message': f"{new_page}It looks like you have already received some training, your base stats are quite developed. \n Hp: 10 \n Strength: 10 \n Speed: 10 \n Agility: 10 \n Intelligence: 10 \n Vitality: 10 \n Xp: 0 \n Press enter to continue..."
+        'message': f"{new_page}It looks like you have already received some training, your base stats are quite developed. \n Hp: 10 \n Strength: 10 \n Speed: 10 \n Intellect: 10 \n Xp: 0 \n Press enter to continue..."
     },
     {
         "type": "list",
@@ -102,6 +123,10 @@ guild_questions = [
 guild_answers = prompt(guild_questions, style=custom_styles)
 class_choice = guild_answers['class']
 weapon = guild_answers['weapon']
+
+# current_player = session.scalars(select(Player).where(Player.name.like(class_choice))).first()
+ability1 = session.query(Abilities).where(Abilities.id == 1).limit(1)
+ability2 = session.query(Abilities).where(Abilities.id == 2).limit(1)
 
 goodbye_questions = [
     {
@@ -147,16 +172,32 @@ pre_battle_blood_fairy = [
     {
         'type': 'input',
         'name': 'seeing monster',
-        'message': f"{new_page}Woahhh!!! \nThat's a beast of a monster. \nIt's a Blood Fairy!!!"
+        'message': f"{new_page}{blood_fairy}\nWoahhh!!! \nIt's a Blood Fairy!!! \nSKREEEEEEEEE!"
     }
 ]
 pre_battle_dark_witch = [
     {
         'type': 'input',
         'name': 'seeing monster',
-        'message': f"{new_page}Woahhh!!! \nThat's a beast of a monster. \nIt's a Dark Witch!!!"
+        'message': f"{new_page}{dark_witch}\nWoahhh!!! \nIt's a Dark Witch!!! \nOOOOOOOOOOH"
     }
 ]
 
 pre_battle_blood_fairy_answers = prompt(pre_battle_blood_fairy, style=custom_styles)
-pre_battle_dark_witch_answers = prompt(pre_battle_dark_witch, style=custom_styles)
+
+hype_for_battle_questions = [
+    {
+        'type': 'input',
+        'name': 'battle hype',
+        'message': f"{new_page}{hype_for_battle}\nI'm not the same person I was before I became a {class_choice}!!! \n Stats: \n Hp: {current_player.hp} \n Strength: {current_player.Strength} \n Speed: {current_player.Speed} \n Intellect: {current_player.intellect} \n Xp: {current_player.xp} \n Equipped Weapon: {weapon} \nAbilities: \nPrimary: {ability1} \nSecondary: {ability2}"
+    }
+]
+
+hype_for_battle_answers = prompt(hype_for_battle_questions, style=custom_styles)
+
+import battle
+
+post_battle = [
+
+]
+
