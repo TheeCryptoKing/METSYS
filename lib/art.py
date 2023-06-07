@@ -291,3 +291,127 @@ hype_for_battle = r"""
          / / /| . |/  /
         (/ (_/ . -/
 """
+
+ability_starburst = r"""
+                                               ;::::"                                               
+                                             |=;;,,;"v\                                             
+                                            l%|^:^+>ls)                                             
+                                            i>\i)ilIi\+=                                            
+                                             '|f#}IgL",                                             
+                                             ?|wk@&$5cZ                                             
+                                          ,=/x>=cCTv)?r>|:                                          
+                                         +,,^+iv="==x)/=;\@                                         
+                                         =;::,wu)//+)>)):/f                                         
+                                        !\;:'rjIrI*))\|^:;;"                                        
+                                       /\/^,:>vi|\\<x"+:':;+<                                       
+                                     I::''''':/<=++/x>;'''':;+x                                     
+                                    i,''';=,::|)^/+=))^::;;,:,/}n                                   
+                                 Ql=,''_';;::="=^)\+/</;:,;,'::^\f                                  
+                                6';:':,/__-';)/,=cc=,|i^,___="^;:eN                                 
+                               ccc)';^/Q  _:"";;;,,,,+%v;'   .[riIn7Ll                              
+                           S{>"?!aov=    ::,=^;,,,;,;:|\,::     QS5g55Fw#                           
+                       Q4w1ri)*q#1      .:'="+^::::,:+)v\^;        W@gpazjfgg                       
+                   2bGEdmwjtj  QQQ      ^^:\<'::;;,^,\{*c;=/          i`))?ofFh45                   
+              D o17T5gbY$B             ;^,;^;::,^;:^^,')c+;=,           xc;."%3YPES2C               
+           "|=c%x}o3GQ                 :,:=+:':,,:::;;::=/;^:                   Q@Gggyz!<           
+         ;";/{Teub.                    ,::="'':,,,:,;,''<>;;,                       Wd2TaIs{        
+      63IoPR0QK                         ';^;'':,;,::;,''+|=::                           &#1?fZk     
+      GhXQQQ                            :=/''':,,,::::'''"):                              Qr3OQ     
+                                        ^^=''':::,::::''_||;`                                       
+
+"""
+
+ability_whirlwing = r"""
+                                   hh4h65yfwwTo!tun                        
+                            Q4ggVh2jjj7eeeo]{{sct                          
+                        VSqSS5#TLTjaa1azt?1>                               
+                     PdgpyJJL7e}}eIItLatn                                  
+                  gm6p5#7m2ee*i%I*Ic                                       
+                hmmT1%5&6[cvirrI1e?t                                       
+              VSqh ^ n1*sv>{{l)Iv eIc[*?!In                                
+            hVhd   @X6*%{x)I{c% )%I]]{{Ic{1[tIt                            
+          ESgg V3h mg   srl7[%I*cllt!lII?I}*r??rt                          
+         XP4YS SVh       >vs))> x?ccrvxs*}I[*  ae                          
+        E4EV   J44         I>)r\**[   cvI{z7[#Lt                           
+      VEEdS     Ehq          Qe5ls!*je%trvl%!]%                            
+      mVVP8      hh4Z     2oto1{l}I?j%rv*sc]{a7                            
+        gPGbg     4E4EE )x11[!six?7olvcx?rs7!!n#e                          
+          gGYGg     VdZj[jJm  v\qTj#vscl[?)ej?[?ee>                        
+            GGPbY      ? G2juL[?aoI?r{%{x1>%1!*o[*c                        
+              YYkbZGd  )sxcir1}eTF2mpu{]{7}[r[1e]e                         
+                 EbgX5?wT??!cl{[t? ZEo[o[#2#e7n    3468PEESn               
+                     S!uw#ntIssoza*x|%%%sjbEhG$d4bX4dhEZhd4g4ShVEZ         
+                        )<c]oI%eS6*tw3J?*OXd    mXdhP    X   QdgEE4Q       
+                         |r)>v+><\i!afYwIu4YPVSdgPgEXdP4PEGEPPPPbGP        
+                     QSXGbGSv>*ytl) :xIv?c}c   QZmPPGGGgPgGgPGGGXPG        
+                 d6gdVdEgVVXH s|s%    !c)rI}*l                             
+             PGGbEEPGbXbEf    )+lv     )vcrrlcx                            
+          EXGgXbkAAYGh         "v        >ixv xi{                          
+       @kbbXEXEGb                          >ic!vI*                         
+     GOkYGGPEm                               %Is {r%                       
+   XPGb88EV444EEEX@                            ?t l![                      
+   hXhgGGdS4gGGP3                               o1v!I                      
+                                                 {v]               
+
+"""
+
+ability_expelliarmus = r"""
+                      Q Q....                                                                                                
+                   Qasv",=;,""%ro.                                                                                           
+                 t%;'-. ..'..`.`;)I                                                                                          
+            ]sU@H!-. -^vr%qJuv));_?Q                                                                                         
+            7|c#Ft)\x1whCt63LtwJ7"?Q                                                             4d               n          
+             6=  `cf8kYbSyqhdgPA&G                QU88Q            X        kGZP44bPP          hgdVhSShVhgVEVq  ZXdShhV4b Q$Q
+              .\'``'xuTwFgqFmgTu\"||"/="w       QOYbZbbZ4Sg4hhS6hmhgSpSqbPggGGYAggdXgYXm6mXm64F6VZQqqggggX44dhdEhXQ4dVdXVSEmh
+                 ",-`|]r"ci^"\:`.`````_!ptao777L5mVh4SmFqdE4dVhVFFhVm55ggGXgPGdEP4V4ZEmh62F35hh  EEO   VE4bg6PVh4gFhY4XdpSqVX
+               JqF!IecII,      -;--:'_r&PjjTTu#24GGPGPXEgdGqE4ShE     BEE4VdhhVEPdXdSq6gYA4 Zdddh Xh3FggdE4qG$gFgSSPPbES&GGg 
+              [sTn%lzi%\`   .. ;Q   z<            ZkbkQ             nI]  |                    8XdhhgSwmggh4Y )l              
+              r*2C{*Ts:... .   :F                    
+               7uL%x>' .        /h                 
+               [uz/-.            :)n                  
+             jv)^^/+_`.......`-:)!7wQ                
+             7cv)eJw?)/||||)/>c5SFm6        
+                                       
+"""
+
+ability_lightning = r"""
+                                   GOD
+              *      .            dZZZZZ,       .          *
+                                 dZZZZ  ZZ,
+     *         .         ,AZZZZZZZZZZZ  `ZZ,_          *
+                    ,ZZZZZZV'      ZZZZ   `Z,`\
+                  ,ZZZ    ZZ   .    ZZZZ   `V
+        *      ZZZZV'     ZZ         ZZZZ    \_              .
+.              V   l   .   ZZ        ZZZZZZ          .
+               l    \       ZZ,     ZZZ  ZZZZZZ,
+   .          /            ZZ l    ZZZ    ZZZ `Z,
+                          ZZ  l   ZZZ     Z Z, `Z,            *
+                .        ZZ      ZZZ      Z  Z, `l
+                         Z        ZZ      V  `Z   \
+                         V        ZZC     l   V
+           Z             l        V ZR        l      .
+            \             \       l  ZA
+                            \         C          C
+                                  \   K   /    /             K
+                          A    \   \  |  /  /              /
+                           \        \\|/ /  /
+   __________________________________\|/_________________________
+"""
+
+ability_fireball = r"""
+⠀⢀⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠈⠻⣶⣤⣤⣴⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠈⠙⠻⠿⠿⠿⠿⠂⠀⠀⢦⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⢰⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⣿⣶⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⢸⣿⣦⡀⠀⠀⣸⣄⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣷⣦⣄⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠈⢿⣿⣿⣿⣿⣿⣿⣷⣤⣄⣠⣴⣿⣿⣿⣿⣿⣿⣿⣿⣷⣤⡀⠀⠀⠀⠀
+⠀⠀⠀⠀⠙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣋⠉⠉⠉⠉⠉⠛⠿⣷⣄⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠈⠙⢿⣿⣿⣿⣿⡿⠛⣿⣿⣿⣷⣦⡀⠀⡄⠀⠀⠈⢻⣆⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣿⣿⡟⠀⠀⠈⠛⠛⠿⠿⢿⡀⢻⣦⣄⡀⢈⣿⡆⠀
+⠀⠀⠀⠀⠀⢲⣄⡀⠀⠀⢸⣿⠁⠀⠐⢦⣄⡀⠀⢦⣤⣄⡀⠻⣿⣿⣿⣿⣷⠀
+⠀⠀⠀⠀⠀⠀⠹⣿⣷⣶⣿⣿⠀⠀⠀⠀⢻⣿⣆⠀⠹⣿⣿⡄⠘⣿⣿⣿⡿⠀
+⠀⠀⠀⠀⠀⠀⠀⠈⢿⣿⣿⣿⣇⠀⠀⠀⠙⠿⠟⠀⠀⢹⣿⡷⢀⣿⣿⣿⠃⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣿⣿⣦⡀⠀⠀⣆⠀⠀⠀⣸⣿⣷⣿⣿⡿⠃⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠿⣿⣶⣤⣘⣿⣶⣶⣿⣿⣿⠿⠋⠁⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠛⠛⠛⠛⠛⠉⠀⠀⠀⠀⠀⠀⠀
+"""
