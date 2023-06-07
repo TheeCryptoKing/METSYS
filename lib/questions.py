@@ -139,3 +139,6 @@ battle_questions = [
         'message': 'There is an ominous air around here.'
     }
 ]
+
+goodbye_answers = prompt(goodbye_questions)
+
