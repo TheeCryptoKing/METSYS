@@ -12,6 +12,7 @@ Base.metadata.create_all(engine)
 #     result = connection.execute(text('select "Were in buisness"'))
 #     print(result.all())
 
+################DEFINE ENGINE AND PARAMETERS##################
 if __name__ == '__main__':
     session = Session(bind=engine)
     session.query(Player).delete()
@@ -20,14 +21,15 @@ if __name__ == '__main__':
     session.query(Abilities).delete()
     session.commit()
     
-    
+    ####################DECLARE LOCATIONS##################
     def declare_locations():
         Home = Location(name="Home")
         Guild = Location(name="Guild")
         FF = Location(name="Fairy Forest")
         session.add_all([Home,Guild,FF])
         session.commit()
-        
+    
+    #####################DECLARE ABILITIES#################### 
     ability_declare = [
         Abilities(name="Shizuka"),
         Abilities(name="Starburst Stream"),
@@ -48,14 +50,15 @@ if __name__ == '__main__':
     session.bulk_save_objects(ability_declare)
     session.commit()
     
+    #########################DECLARE PLAYERS#####################
     def declare_player():
     # exisits but no column player.location
     # MVP = Str, Spe, hp, xp, Weapon
         Slayer = Player(
                         name="Slayer",
                         location_id=1,
-                        primary_attack=1,
-                        secondary_attack=2,
+                        # primary_attack=1,
+                        # secondary_attack=2,
                         Strength=10,
                         Speed=15,
                         Weapon="Dual Katanas",
@@ -66,8 +69,8 @@ if __name__ == '__main__':
         Warrior = Player(
                         name="Warrior",
                         location_id=1,
-                        primary_attack=3,
-                        secondary_attack=4,
+                        # primary_attack=3,
+                        # secondary_attack=4,
                         Strength=15,
                         Speed=10,
                         Weapon="Champions Broadsword", 
@@ -78,8 +81,8 @@ if __name__ == '__main__':
         Mage = Player(
                     name="Mage", 
                     location_id=1, 
-                    primary_attack=5,
-                    secondary_attack=6,
+                    # primary_attack=5,
+                    # secondary_attack=6,
                     Strength=15, 
                     Speed=10, 
                     Weapon="Surasshu", 
@@ -90,7 +93,7 @@ if __name__ == '__main__':
         session.add_all([Slayer , Warrior, Mage])
         session.commit()
 
-
+##########################DECLARE FAIRY FOREST ENEMIES################
     def declare_FF_enemy():
     # MVP = hp, xp_given, intellect, speed, strength, weapon, BOSS_FF and Fairies
     # exisits but no column for enemy.location
@@ -138,6 +141,7 @@ if __name__ == '__main__':
         session.add_all([BOSS_FF, Harpies, Fairies, Witchs])
         session.commit()
 
+##################INVOKE FUNCTIONS################
     declare_locations()
     declare_player()
     declare_FF_enemy()
@@ -153,10 +157,12 @@ if __name__ == '__main__':
     player_choice= "Mage"
     player_location= "Home"
     
-    # CURRENT PLAYER
+    ################## CURRENT PLAYER ####################
+    # FOR PLAYER INPUT #
     current_player = session.scalars(select(Player).where(Player.name.like(player_choice))).first()
     
-    # CURRENT LOCATION
+    ################### CURRENT LOCATION #####################
+    # FOR PLAYER INPUT #
     current_location = session.scalars(select(Location).where(Location.name.like(player_location))).first()
     
     # DONT NEED
@@ -189,7 +195,7 @@ if __name__ == '__main__':
     # for enemy in dem_enemy_attack1:
     #     print(f"{enemy.name} | {enemy.attack2.name}")
 
-    # CURRENT ENEMY LOCATION 
+    ############################# CURRENT ENEMY LOCATION ####################
     Evil_peoples_hood = session.scalars(
         select(Enemy, Location).join(Enemy.location)
     )
@@ -197,7 +203,7 @@ if __name__ == '__main__':
     for enemy in Evil_peoples_hood:
         print(f"{enemy.name} | {enemy.location.name}")
     
-    # CURRENT PLAYER LOCATION  
+    ############################### CURRENT PLAYER LOCATION ################# 
     where_you_at = session.scalars(
         select(Player, Location).join(Player.location)
     )

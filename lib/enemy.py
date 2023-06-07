@@ -1,17 +1,90 @@
 pass
-# Kwame's Journal 
-
-# Currently Done 
+########################################### Kwame's Journal ##############################################
+########################### CURRENTLY DONE 
 # Location Table
 # currentplayer to currentlocation
 # Player Table W/ ABilities
+# Enemy Table W/ Abilities
 # Ability Table
 
+####################### QUESTIONABLE ERRORS
+# Look into OperationalError being a problem with alembic
+# How can we get multiple foreign keys to work???
 
-# Need to Finish
-# Enemy Table W/ Abilities
+############################### NEED TO FINISH 
 # Cli prompts and imput specification 
+
+############################# STRETCH GOALS
+# expand tables so more data can be passed threw
 # Save functionality? 
+
+# Designing #
+# Use text user interface python
+# use/install rich 
+# pyfiglet
+# or straight ascii art
+
+# Multiple worlds #
+# Fairy Forest
+# Orc Mountain
+# Demon Dungeon 
+
+# implement quests
+# Specific Quests for Each World
+# Based of Lore
+
+# Multiple Weapons #
+# Weapon Abilities 
+
+# Multiple Companions #
+# companion abilities 
+
+# Deeper Lore #
+# Blood witchs and blood fairies 
+# Orcs and Beserk Orcs and culture hoe they have to be tough or seen as weak
+# Demons and how Demon dungeon came to be why you dont die there just got to hell ??just spitballing
+
+# 4 options in Quests #
+# Quest1, Quest2, EXP, Pass through 
+
+# Ability to attack, dodge, Flee
+# also with flee cant move beyond point or leave quest(get penializeid)
+# wallet, charms
+# Defense, armor, defense ability: SLAYER:evade, MAGE:parry, WARRIOR:block
+
+# More enemies #
+# More blood fairies and blood lore, can be blood witches to 
+# Demons and skeletons
+# Orcs, beserk Orcs, and Orc Assassins
+
+# More Bosses #
+# illuminati have to collect skulls, grayskull, ghostridersskull, Last skull???
+# Collect skulls from 3 bosses #
+# Orc mountain Boss = Orc God (not really a god just huge and bigger and badder)
+# Demon Dungeon Boss = One of Satans Sons 
+
+# Second playthorugh #
+# veil lifts 
+# new enemies adn world is harder ot get threw
+# new enemies:
+# Ghosts # New Witchs # Robots # Story crossovers # Aliens #
+# could do crossovers for the fuck of it  
+# Story crossovers : Darth Vader, Terminator, Wolf of MGS, Sephiroth, Ganondorf, Shoa Khan
+# Second boss for last Playthrough ? Nega Player like scott pilgrims final villian, 
+
+# How to win #
+# Must beat the System = METSYS backwards
+# Illuminati tells you about interdimensional portal on defeat
+# Must play harder second playthrough to beat, Once 2nd Boss Defeated you walk back to guild and find portal
+
+# Functionality Needs to be worked out #
+# Start Screen when start 
+# inventory menu(companion included)(also maybe only available in home????)
+# weapon menu
+# main menu available like pokemon
+# entire route based on chosen Quest from guild or hut after you pick world
+# End screen when win 
+########################################JOURNAL#########################
 
 # 2 ways to grab data eithe rmake all numbered pairs and connect to id can do with prim and sec being declared
 # or down a straight list and grab but if down a straight list i have to call each one individually and connect them to id still 
@@ -58,9 +131,6 @@ pass
 # win or lose idk 
 # what stats do you want with a add stats funtion destermined with a session.add() and session.commit
 # retry when die and get upgrade if lose
-
-# End screen when win 
-
 
 # Learningcode
 # 1st lesson
@@ -129,7 +199,6 @@ pass
     #     ]
     # session.bulk_save_objects(declare_FF_enemy)
     # session.commit()
-    
     
     # Slayer.abilities = 1."Shizuka", 2."Starburst Stream"
     # Warrior.abilities = 3. "Whirlwind Strike" , 4."Headstrong"
