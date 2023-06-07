@@ -82,7 +82,7 @@ class Abilities(Base):
     player2 = relationship("Player", foreign_keys=[Player.primary_attack], back_populates='attack1')
     player3 = relationship("Player", foreign_keys=[Player.secondary_attack], back_populates='attack2')
     
-    # Enemy bidemnsional route (Not working)
+    # Enemy bidemnsional route 
     enemy2 = relationship("Enemy", foreign_keys=[Enemy._primary_attack_], back_populates='attack1')
     enemy3 = relationship("Enemy", foreign_keys=[Enemy._secondary_attack_], back_populates='attack2')
     

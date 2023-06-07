@@ -6,13 +6,23 @@ pass
 # Player Table W/ ABilities
 # Enemy Table W/ Abilities
 # Ability Table
+###############################Temporary CODE #######################
 
 ####################### QUESTIONABLE ERRORS
-# Look into OperationalError being a problem with alembic
-# How can we get multiple foreign keys to work???
+
 
 ############################### NEED TO FINISH 
 # Cli prompts and imput specification 
+# Have Read, need update, create and delete
+# Need to connect battle 
+# need to 
+
+# Don't need a current player
+# to add need a session.commit()
+# to delete need a session.delete()
+# to update need 
+# global slected_user
+# selected_users -=1
 
 ############################# STRETCH GOALS
 # expand tables so more data can be passed threw
@@ -23,6 +33,7 @@ pass
 # use/install rich 
 # pyfiglet
 # or straight ascii art
+# 
 
 # Multiple worlds #
 # Fairy Forest
