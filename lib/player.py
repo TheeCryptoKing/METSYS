@@ -4,6 +4,7 @@ from sqlalchemy import Column, ForeignKey, Integer, Float, String, create_engine
 engine = create_engine('sqlite:///game.db', echo=True)
 Base = declarative_base()
 # Base.metadata.create_all(engine)
+
 # model.py
 
 ############################## SET MODEL FOR LOCATION ##############################
@@ -71,6 +72,7 @@ class Enemy(Base):
 
 ######################################### SET MODEL FOR ABILITIES ##########################
 class Abilities(Base):
+    
     # one-to-one
     __tablename__ = 'abilities'
     id = Column(Integer, primary_key=True)
@@ -80,7 +82,7 @@ class Abilities(Base):
     player2 = relationship("Player", foreign_keys=[Player.primary_attack], back_populates='attack1')
     player3 = relationship("Player", foreign_keys=[Player.secondary_attack], back_populates='attack2')
     
-    # Enemy bidemnsional route (Not working)
+    # Enemy bidemnsional route 
     enemy2 = relationship("Enemy", foreign_keys=[Enemy._primary_attack_], back_populates='attack1')
     enemy3 = relationship("Enemy", foreign_keys=[Enemy._secondary_attack_], back_populates='attack2')
     
