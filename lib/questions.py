@@ -8,7 +8,7 @@ custom_styles = style_from_dict(
         Token.Selected: "#fafaf9",
         Token.Pointer: "#d9480f bold",
         Token.Instructions: "",
-        Token.Answer: "#afaf87 bold",
+        Token.Answer: "#005f00",
         Token.Question: "#005f00",
     }
 )
@@ -46,13 +46,13 @@ guild_questions = [
     },
     {
         'type': 'input',
-        'name': 'base stats',
+        'name': 'base_stats',
         'message': "\nIt looks like you have already received some training, your base stats are quite developed. \n Hp: 10 \n Strength: 10 \n Speed: 10 \n Agility: 10 \n Intelligence: 10 \n Vitality: 10 \n Xp: 0 \n Press enter to continue..."
     },
     {
         'type': 'list',
         'name': 'class',
-        'message': f"\nPicking a class is a vital point in an adventurer's journey. It will allow you to harness your potential and focus on the stats you wish to develop\nPlease choose which path you will follow in your endeavors.\nSlayer: {slayer_weapon} \nWarrior: {warrior_weapon} \nMage: {mage_weapon}",
+        'message': f"\nPicking a class is a vital point in an adventurer's journey. It will allow you to harness your potential and focus on the stats you wish to develop.\nPlease choose which path you will follow in your endeavors.\nSlayer: {slayer_weapon} \nWarrior: {warrior_weapon} \nMage: {mage_weapon}",
         'choices': ["Slayer", "Warrior", "Mage"]
     },
     {
@@ -106,9 +106,6 @@ goodbye_questions = [
 ]
 
 goodbye_answers = prompt(goodbye_questions)
-
-
-
 
 
 
