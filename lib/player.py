@@ -4,6 +4,7 @@ from sqlalchemy import Column, ForeignKey, Integer, Float, String, create_engine
 engine = create_engine('sqlite:///game.db', echo=True)
 Base = declarative_base()
 # Base.metadata.create_all(engine)
+
 # model.py
 
 ############################## SET MODEL FOR LOCATION ##############################
@@ -71,6 +72,7 @@ class Enemy(Base):
 
 ######################################### SET MODEL FOR ABILITIES ##########################
 class Abilities(Base):
+    
     # one-to-one
     __tablename__ = 'abilities'
     id = Column(Integer, primary_key=True)
