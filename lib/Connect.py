@@ -193,10 +193,10 @@ if __name__ == '__main__':
     #     select(Enemy, Abilities).join(Enemy.secondary_attack)
     # )
     # test data for ENEMY ABILITIES
-    for enemy in dem_enemy_attack1:
-        print(f"{enemy.name} | {enemy.primary_attack}")
-    for enemy in dem_enemy_attack1:
-        print(f"{enemy.name} | {enemy.secondary_attack}")
+    # for enemy in dem_enemy_attack1:
+    #     print(f"{enemy.name} | {enemy.primary_attack}")
+    # for enemy in dem_enemy_attack1:
+    #     print(f"{enemy.name} | {enemy.secondary_attack}")
 
     # CURRENT ENEMY LOCATION 
     Evil_peoples_hood = session.scalars(
