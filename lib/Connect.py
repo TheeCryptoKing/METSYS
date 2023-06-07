@@ -3,10 +3,10 @@ from sqlalchemy.orm import Session
 import ipdb
 from player import *
 
-# Need a seed.py, a cli.py, a debug.py
 engine = create_engine("sqlite:///game.db", echo=True)
 Base.metadata.create_all(engine)
-# engine successfully created
+
+# to check engine successfully created
 # with engine.connect() as connection:
 #     result = connection.execute(text('select "Were in buisness"'))
 #     print(result.all())
@@ -21,7 +21,8 @@ if __name__ == '__main__':
     session.commit()
     
     def declare_player():
-        # can define playerlocation with player.location 
+    # exisits but no column enemy.location
+    # can define playerlocation with player.location 
     # MVP = Str, Spe, hp, xp, Weapon
         Slayer = Player(
                         name="Slayer",
@@ -48,13 +49,15 @@ if __name__ == '__main__':
                     Speed=10, 
                     Weapon="Surasshu", 
                     hp=80, 
-                    xp=0)
+                    xp=0
+                    )
         session.add_all([Slayer , Warrior, Mage])
         session.commit()
 
 
     def declare_FF_enemy():
-    # MVP = hp, xp_given, intellect, speed, strength, weapon
+    # MVP = hp, xp_given, intellect, speed, strength, weapon, BOSS_FF and Fairies
+    # exisits but no column enemy.location
         BOSS_FF = Enemy(
             name="Blood Magic Queen",
             location_id=3,
@@ -85,7 +88,7 @@ if __name__ == '__main__':
             strength=15,
             weapon="Bood Magic"
             ) 
-        Witch = Enemy(
+        Witchs = Enemy(
             name="Dark Witch",
             location_id=3,
             hp=15,
@@ -95,7 +98,7 @@ if __name__ == '__main__':
             strength=15,
             weapon="Witch Wand"
             )
-        session.add_all([BOSS_FF, Harpies, Fairies, Witch ])
+        session.add_all([BOSS_FF, Harpies, Fairies, Witchs])
         session.commit()
 
 
@@ -106,29 +109,50 @@ if __name__ == '__main__':
         session.add_all([Home,Guild,FF])
         session.commit()
 
-    def ability_declare():
-        Slayer = session.query(Player).filter_by(name="Slayer").first()
-        Slayer.abilities = [
-            Abilities(ability_name="Shizuka"),
-            Abilities(ability_name="Starburst Stream")
-        ]
-        Warrior = session.query(Player).filter_by(name="Warrior").first()
-        # session.bulksaveobjects
-        Warrior.abilities = [
-            Abilities(ability_name="Whirlwind Strike"),
-            Abilities(ability_name="Headstrong")
-        ]
-        Mage = session.query(Player).filter_by(name="Mage").first()
-        Mage.abilities =  [
-            Abilities(ability_name="Serpentine Slash"),
-            Abilities(ability_name="Expelliarmus")
-        ]
+
+    # def ability_declare():
+    #     Slayer = session.query(Player).filter_by(name="Slayer").first()
+    #     Slayer.abilities = [
+    #         Abilities(ability_name="Shizuka"),
+    #         Abilities(ability_name="Starburst Stream")
+    #     ]
+    #     Warrior = session.query(Player).filter_by(name="Warrior").first()
+    #     # session.bulksaveobjects
+    #     Warrior.abilities = [
+    #         Abilities(abilities="Whirlwind Strike"),
+    #         Abilities(abilities="Headstrong")
+    #     ]
+    #     Mage = session.query(Player).filter_by(name="Mage").first()
+    #     Mage.abilities =  [
+    #         Abilities(abilities="Serpentine Slash"),
+    #         Abilities(abilities="Expelliarmus")
+    #     ]
+    #     BOSS_FF = session.query(Enemy).filter_by(name="BOSS_FF").first()
+    #     BOSS_FF.abilities = [
+    #         # blood syphon can take hp from Player
+    #         # or MVP just alot of Attack
+    #         Abilities(abilities="Blood Siphon"),
+    #         Abilities(abilities="Blood Scypth Swirl")
+    #     ]
+    #     Harpies = session.query(Enemy).filter_by(name="Mage").first()
+    #     Harpies.abilities = [
+    #         Abilities(abilities="TigerClaw Slash"),
+    #         Abilities(abilities="Harpies Song")
+    #     ]
+    #     Fairies = session.query(Enemy).filter_by(name="Mage").first()
+    #     Fairies.abilities = [
+    #         Abilities(abilities="MoonBeam"),
+    #         Abilities(abilities="Blood Shard Barrage")
+    #     ]
+    #     Witch = session.query(Enemy).filter_by(name="Mage").first()
+    #     Witch.abilities = [
+    #         Abilities(abilities="Lightning Strike"),
+    #         Abilities(abilities="Fireball")
+    #     ]
         
-        
-        
-        session.bulk_save_objects(Slayer.abilities)
-        session.bulk_save_objects(Warrior.abilities)
-        session.bulk_save_objects(Mage.abilities)
+        # session.bulk_save_objects(Slayer.abilities)
+        # session.bulk_save_objects(Warrior.abilities)
+        # session.bulk_save_objects(Mage.abilities)
         # session.bulk_save_objects([Slayer.abilities, Warrior.abilities, Mage.abilities])
         # session.add_all([Slayer.abilities, Warrior.abilities, Mage.abilities])
         session.commit()
@@ -142,7 +166,7 @@ if __name__ == '__main__':
     # session.commit()
     
     declare_player()
-    # declare_FF_enemy()
+    declare_FF_enemy()
     declare_locations()
     # ability_declare()
     
@@ -159,6 +183,8 @@ if __name__ == '__main__':
     
     # grabs current player and player data 
     current_player = session.scalars(select(Player).where(Player.name.like(player_choice))).first()
+    
+    # current location 2 function for input
     current_location = session.scalars(select(Location).where(Location.name.like(player_location))).first()
 
     # define locations

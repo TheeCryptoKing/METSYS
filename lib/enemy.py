@@ -1,13 +1,15 @@
 pass
 # Kwame's Journal 
 
-
 # Currently Done 
 # Location Table
-# Enemy Table
+
+
+
 # Player Table
+# Enemy Table
 # Ability Table
-# Cli prompts
+# Cli prompts and imput specification ()
 
 
 

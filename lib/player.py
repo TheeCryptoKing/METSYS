@@ -21,8 +21,8 @@ class Player(Base):
     # player.location can change location 
     location_id = Column(Integer, ForeignKey('location.id'))
     location = relationship("Location", back_populates='player')
-    abilities_id = Column(Integer, ForeignKey('abilities.id'))
-    abilities = relationship("Abilities", back_populates='player')
+    # abilities_id = Column(Integer, ForeignKey('abilities.id'))
+    # abilities = relationship("Abilities", back_populates='player')
     # Player Stats
     Strength = Column(Integer)
     Speed = Column(Integer)
@@ -30,8 +30,6 @@ class Player(Base):
     hp = Column(Float, default=100)
     xp = Column(Integer, default=0)
     # STRETCH wallet:[int] = mapped_column(Integer, default=0)
-    # abilities = relationship("Abilities", back_populates="player")
-
 
 class Enemy(Base):
     # hp, xp given, Int, Speed, Strength, 
@@ -41,8 +39,8 @@ class Enemy(Base):
     # enemy.location can change enemy location 
     location_id = Column(Integer, ForeignKey('location.id'))
     location = relationship("Location", back_populates='enemy')
-    abilities_id = Column(Integer, ForeignKey('abilities.id'))
-    abilities = relationship("Abilities", back_populates='enemy')
+    # abilities_id = Column(Integer, ForeignKey('abilities.id'))
+    # abilities = relationship("Abilities", back_populates='enemy')
     # Enemy Stats
     hp = Column(Float, default=100)
     xp_given = Column(Integer)
@@ -50,8 +48,6 @@ class Enemy(Base):
     speed = Column(Integer)
     strength = Column(Integer)
     weapon = Column(String, nullable=True)
-    
-    
     
 # class Abilities(Base):
 #     # one-to-one
@@ -62,6 +58,6 @@ class Enemy(Base):
     # companion_ability = Column(String, default=None)
     # player_id = Column(Integer, ForeignKey('player.id'), nullable=False)
     # player = relationship("Player", back_populates='abilities')
-    # enemy = relationship("Enemy", back_populates='')
+    # enemy = relationship("Enemy", back_populates='enemy')
 
 
