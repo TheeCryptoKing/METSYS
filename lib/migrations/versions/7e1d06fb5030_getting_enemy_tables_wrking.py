@@ -1,8 +1,8 @@
-"""trying to fix enemy table 
+"""getting enemy tables wrking
 
-Revision ID: 8fa9ca9d87a9
-Revises: 82e16b9c9de6
-Create Date: 2023-06-06 19:22:59.668180
+Revision ID: 7e1d06fb5030
+Revises: d619a4a22b49
+Create Date: 2023-06-06 23:09:49.875454
 
 """
 from alembic import op
@@ -10,8 +10,8 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '8fa9ca9d87a9'
-down_revision = '82e16b9c9de6'
+revision = '7e1d06fb5030'
+down_revision = 'd619a4a22b49'
 branch_labels = None
 depends_on = None
 

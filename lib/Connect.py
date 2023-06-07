@@ -16,8 +16,8 @@ if __name__ == '__main__':
     session = Session(bind=engine)
     session.query(Player).delete()
     session.query(Location).delete()
-    # session.query(Enemy).delete()
-    # session.query(Abilities).delete()
+    session.query(Enemy).delete()
+    session.query(Abilities).delete()
     session.commit()
     
     
@@ -27,12 +27,34 @@ if __name__ == '__main__':
         FF = Location(name="Fairy Forest")
         session.add_all([Home,Guild,FF])
         session.commit()
+        
+    ability_declare = [
+        Abilities(name="Shizuka"),
+        Abilities(name="Starburst Stream"),
+        Abilities(name="Whirlwind_Strike"),
+        Abilities(name="Headstrong"),
+        Abilities(name="Serpentine Slash"),
+        Abilities(name="Expelliarmus"),
+        # Villians
+        Abilities(name="Blood Siphon"),
+        Abilities(name="Blood Scypth Swirl"),
+        Abilities(name="TigerClaw Slash"),
+        Abilities(name="Harpies Song"),
+        Abilities(name="MoonBeam"),
+        Abilities(name="Blood Shard Barrage"),
+        Abilities(name="Lightning Strike"),
+        Abilities(name="Fireball")
+    ]
+    session.bulk_save_objects(ability_declare)
+    session.commit()
     
     def declare_player():
     # exisits but no column player.location
     # MVP = Str, Spe, hp, xp, Weapon
         Slayer = Player(
                         name="Slayer",
+                        # primary_attack=1,
+                        # secondary_attack=2,
                         location_id=1,
                         Strength=10,
                         Speed=15,
@@ -43,6 +65,8 @@ if __name__ == '__main__':
                         )
         Warrior = Player(
                         name="Warrior",
+                        # primary_attack=3,
+                        # secondary_attack=4,
                         location_id=1,
                         Strength=15,
                         Speed=10,
@@ -53,6 +77,8 @@ if __name__ == '__main__':
                         )
         Mage = Player(
                     name="Mage", 
+                    # primary_attack=5,
+                    # secondary_attack=6,
                     location_id=1, 
                     Strength=15, 
                     Speed=10, 
@@ -68,9 +94,12 @@ if __name__ == '__main__':
     def declare_FF_enemy():
     # MVP = hp, xp_given, intellect, speed, strength, weapon, BOSS_FF and Fairies
     # exisits but no column for enemy.location
+        # ENEMY order name, location_id, location, primary_attack, secondary_attack, hp, xp_given, intellect, speed, strength, weapon
         BOSS_FF = Enemy(
             name="Blood Magic Queen",
             location_id=3,
+            # primary_attack=7,
+            # secondary_attack=8,
             hp=40, 
             xp_given=30,
             intellect=50,
@@ -81,6 +110,8 @@ if __name__ == '__main__':
         Harpies = Enemy(
             name="TigerClaw Harpy",
             location_id=3,
+            # primary_attack=9,
+            # secondary_attack=10,
             hp=20,
             xp_given=20,
             intellect=20,
@@ -91,6 +122,8 @@ if __name__ == '__main__':
         Fairies = Enemy(
             name="Blood Magic Fairy",
             location_id=3,
+            # primary_attack=11,
+            # secondary_attack=12,
             hp=10,
             xp_given=10,
             intellect=18,
@@ -101,6 +134,8 @@ if __name__ == '__main__':
         Witchs = Enemy(
             name="Dark Witch",
             location_id=3,
+            # primary_attack=13,
+            # secondary_attack=14,
             hp=15,
             xp_given=15,
             intellect=15,
@@ -111,66 +146,11 @@ if __name__ == '__main__':
         session.add_all([BOSS_FF, Harpies, Fairies, Witchs])
         session.commit()
 
-
-    # def ability_declare():
-    #     Slayer = session.query(Player).filter_by(name="Slayer").first()
-    #     Slayer.abilities = [
-    #         Abilities(ability_name="Shizuka"),
-    #         Abilities(ability_name="Starburst Stream")
-    #     ]
-    #     Warrior = session.query(Player).filter_by(name="Warrior").first()
-    #     # session.bulksaveobjects
-    #     Warrior.abilities = [
-    #         Abilities(ability_name="Whirlwind Strike"),
-    #         Abilities(ability_name="Headstrong")
-    #     ]
-    #     Mage = session.query(Player).filter_by(name="Mage").first()
-    #     Mage.abilities =  [
-    #         Abilities(ability_name="Serpentine Slash"),
-    #         Abilities(ability_name="Expelliarmus")
-    #     ]
-        # BOSS_FF = session.query(Enemy).filter_by(name="BOSS_FF").first()
-        # BOSS_FF.abilities = [
-        #     # blood syphon can take hp from Player
-        #     # or MVP just alot of Attack
-        #     Abilities(abilities="Blood Siphon"),
-        #     Abilities(abilities="Blood Scypth Swirl")
-        # ]
-        # Harpies = session.query(Enemy).filter_by(name="Mage").first()
-        # Harpies.abilities = [
-        #     Abilities(abilities="TigerClaw Slash"),
-        #     Abilities(abilities="Harpies Song")
-        # ]
-        # Fairies = session.query(Enemy).filter_by(name="Mage").first()
-        # Fairies.abilities = [
-        #     Abilities(abilities="MoonBeam"),
-        #     Abilities(abilities="Blood Shard Barrage")
-        # ]
-        # Witch = session.query(Enemy).filter_by(name="Mage").first()
-        # Witch.abilities = [
-        #     Abilities(abilities="Lightning Strike"),
-        #     Abilities(abilities="Fireball")
-        # ]
-        
-        # session.bulk_save_objects(Slayer.abilities)
-        # session.bulk_save_objects(Warrior.abilities)
-        # session.bulk_save_objects(Mage.abilities)
-        # session.bulk_save_objects([Slayer.abilities, Warrior.abilities, Mage.abilities])
-        # session.add_all([Slayer.abilities, Warrior.abilities, Mage.abilities])
-        # session.commit()
-    
-
-    # current_location = session.query(Location).filter_by(name="Home").first()
-    # current_player = session.query(Player).filter_by(name="Slayer").first()
-    # Assign the current_location to the location attribute of the current_player
-    # current_player.location = current_location
-    # Commit the changes to the session
-    # session.commit()
     
     declare_locations()
     declare_player()
     declare_FF_enemy()
-    # ability_declare()
+
     
     # place inside cli.py
     # player_choice = input("Choose a player (Slayer, Mage, Warrior): ") 
@@ -183,39 +163,54 @@ if __name__ == '__main__':
     player_choice= "Mage"
     player_location= "Home"
     
-    # grabs current player and player data 
+    # CURRENT PLAYER
     current_player = session.scalars(select(Player).where(Player.name.like(player_choice))).first()
     
-    # current location 2 function for input
+    # CURRENT LOCATION
     current_location = session.scalars(select(Location).where(Location.name.like(player_location))).first()
+    
+    # join function for PLAYER and ABILITIES 
+    # DEFINED BY PLAYER.ID
+    # dem_hero_attack1 = session.scalars(
+    #     select(Player, Abilities).join(Player.primary_attack)
+    # )
+    # dem_hero_attack2 = session.scalars(
+    #     select(Player, Abilities).join(Player.secondary_attack)
+    # )
+    # # test data for PLAYER ABILITIES 
+    # for player in dem_hero_attack1:
+    #     print(f"{player.name} | {player.primary_attack}")
+    # for player in dem_hero_attack2:
+    #     print(f"{player.name} | {player.secondary_attack}")
+        
 
-    # define locations
-    # player.location 
-    # enemy.location
-    
-    # default fucntion is current.player
-    # join function for Player and Abilities
-    # dem_hero_abilities = session.scalars(
-    #     select(Player, Abilities).join(Player.abilities)
+    # # join function for ENEMY and ABILITIES
+    # # DEFINED BY ENEMY.ID
+    # dem_enemy_attack1 = session.scalars(
+    #     select(Enemy, Abilities).join(Enemy.primary_attack)
     # )
-    # for player in dem_hero_abilities:
-    #     print(f"{player.name} | {player.abilities}")
-    
-    # join function for Enemy and Abilities
-    # dem_enemy_abilities = session.scalars(
-    #     select(Enemy, Abilities).join(Enemy.abilities)
+    # dem_enemy_attack2 = session.scalars(
+    #     select(Enemy, Abilities).join(Enemy.secondary_attack)
     # )
-    # WILL CONTINUE WHEN ENEMIES WORK 
+    # test data for ENEMY ABILITIES
+    for enemy in dem_enemy_attack1:
+        print(f"{enemy.name} | {enemy.primary_attack}")
+    for enemy in dem_enemy_attack1:
+        print(f"{enemy.name} | {enemy.secondary_attack}")
 
-    # Current location based on Enemy
-    # Evil_peoples_hood = session.scalars(
-    #     select(Enemy, Location).join(Enemy.location)
-    # )
+    # CURRENT ENEMY LOCATION 
+    Evil_peoples_hood = session.scalars(
+        select(Enemy, Location).join(Enemy.location)
+    )
+    # test data for function 
+    for enemy in Evil_peoples_hood:
+        print(f"{enemy.name} | {enemy.location.name}")
     
-    # Current location based of player 
+    # CURRENT PLAYER LOCATION  
     where_you_at = session.scalars(
         select(Player, Location).join(Player.location)
     )
+    # test data for function 
     for player in where_you_at:
         if current_player.name == player.name:
             print(f"{player.name} | {player.location.name}")

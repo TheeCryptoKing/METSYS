@@ -1,8 +1,8 @@
-"""getting tables wrking
+"""getting enemy tables wrking
 
-Revision ID: 3abae350a50f
-Revises: f08a2fe67c64
-Create Date: 2023-06-06 20:11:18.614380
+Revision ID: d619a4a22b49
+Revises: 
+Create Date: 2023-06-06 22:56:49.442818
 
 """
 from alembic import op
@@ -10,8 +10,8 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '3abae350a50f'
-down_revision = 'f08a2fe67c64'
+revision = 'd619a4a22b49'
+down_revision = None
 branch_labels = None
 depends_on = None
 

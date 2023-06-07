@@ -11,7 +11,7 @@ class Location(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String, nullable=True)
     player = relationship("Player", back_populates='location')
-    # enemy = relationship("Enemy", back_populates='location')
+    enemy = relationship("Enemy", back_populates='location')
 
 class Player(Base):
     __tablename__ = 'player'
@@ -19,11 +19,14 @@ class Player(Base):
     # MVP, Moves, Strength, Speed,  
     id = Column(Integer, primary_key=True)
     name = Column(String, nullable=True)
+    # primary_attack = Column(Integer, ForeignKey('abilities.id'))
+    # attack1 = relationship("Abilities", back_populates='player')
+    # secondary_attack = Column(Integer, ForeignKey('abilities.id'))
+    # attack2 = relationship("Abilities", back_populates='player')
     # player.location can change location 
     location_id = Column(Integer, ForeignKey('location.id'))
     location = relationship("Location", back_populates='player')
-    # abilities_id = Column(Integer, ForeignKey('abilities.id'))
-    # abilities = relationship("Abilities", back_populates='player')
+
     # Player Stats
     Strength = Column(Integer)
     Speed = Column(Integer)
@@ -39,10 +42,13 @@ class Enemy(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String, nullable=True)
     # enemy.location can change enemy location 
-    # location_id = Column(Integer, ForeignKey('location.id'))
-    # location = relationship("Location", back_populates='enemy')
-    # abilities_id = Column(Integer, ForeignKey('abilities.id'))
-    # abilities = relationship("Abilities", back_populates='enemy')
+    location_id = Column(Integer, ForeignKey('location.id'))
+    location = relationship("Location", back_populates='enemy')
+    # primary_attack = Column(Integer, ForeignKey('abilities.attack1'))
+    # attack1 = relationship("Abilities", back_populates='enemy')
+    # secondary_attack = Column(Integer, ForeignKey('abilities.attack2'))
+    # attack2 = relationship("Abilities", back_populates='enemy')
+    
     # Enemy Stats
     hp = Column(Float, default=100)
     xp_given = Column(Integer)
@@ -53,16 +59,15 @@ class Enemy(Base):
     
     
 # if cannot get abilities to work will define in Player
-# class Abilities(Base):
-#     # one-to-one
-#     __tablename__ = 'abilities'
-#     id = Column(Integer, primary_key=True)
-#     ability_name = Column(String, nullable=True)
-#     weapon_ability = Column(String, default=None)
-#     companion_ability = Column(String, default=None)
-#     player_id = Column(Integer, ForeignKey('player.id'), nullable=False)
-#     player = relationship("Player", back_populates='abilities')
-    # enemy_id = Column(Integer, ForeignKey('enemy.id'), nullable=False)
-    # enemy = relationship("Enemy", back_populates='enemy')
+class Abilities(Base):
+    # one-to-one
+    __tablename__ = 'abilities'
+    id = Column(Integer, primary_key=True)
+    name = Column(String)
+    # player = relationship("Player", back_populates='attack1')
+    # enemy = relationship("Enemy", back_populates='attack1')
+    # player = relationship("Player", back_populates='attack2')
+    # enemy = relationship("Enemy", back_populates='attack2')
+
 
 
