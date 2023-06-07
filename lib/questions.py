@@ -8,7 +8,8 @@ from art import (
                 city_view,
                 forest_path,
                 pathway_view,
-                hello_traveler
+                hello_traveler,
+                ominous_tree
                 )
 
 from player import *
@@ -101,6 +102,7 @@ guild_questions = [
 guild_answers = prompt(guild_questions, style=custom_styles)
 class_choice = guild_answers['class']
 weapon = guild_answers['weapon']
+
 goodbye_questions = [
     {
         'type': 'input',
@@ -119,6 +121,8 @@ goodbye_questions = [
     }
 ]
 goodbye_answers = prompt(goodbye_questions, style=custom_styles)
+
+
 pathway_questions = [
     {
         'type': 'input',
@@ -130,15 +134,29 @@ pathway_questions = [
         'name': 'view',
         'message': f"{new_page}{pathway_view}\nWow the view from this path is incredible! \nIt seems the magical energy of the fairies inhabiting this land is causing the night sky to by so colorful."
     },
-]
-pathway_answers = prompt(pathway_questions, style=custom_styles)
-battle_questions = [
     {
         'type': 'input',
-        'name': 'intro battle',
-        'message': 'There is an ominous air around here.'
+        'name': 'otw battle',
+        'message': f"{new_page}{ominous_tree}\nThere is an ominous air around here. \nSomething might be lurking in the shadows by that tree..."
     }
 ]
 
-goodbye_answers = prompt(goodbye_questions)
+pathway_answers = prompt(pathway_questions, style=custom_styles)
 
+pre_battle_blood_fairy = [
+    {
+        'type': 'input',
+        'name': 'seeing monster',
+        'message': f"{new_page}Woahhh!!! \nThat's a beast of a monster. \nIt's a Blood Fairy!!!"
+    }
+]
+pre_battle_dark_witch = [
+    {
+        'type': 'input',
+        'name': 'seeing monster',
+        'message': f"{new_page}Woahhh!!! \nThat's a beast of a monster. \nIt's a Dark Witch!!!"
+    }
+]
+
+pre_battle_blood_fairy_answers = prompt(pre_battle_blood_fairy, style=custom_styles)
+pre_battle_dark_witch_answers = prompt(pre_battle_dark_witch, style=custom_styles)
