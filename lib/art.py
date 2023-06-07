@@ -90,6 +90,7 @@ forest_gate = r"""
  ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^~~~~~~~~~~~
     """
 
+
 city_view = r"""
                       \|/
                       -o-                              |
@@ -140,3 +141,91 @@ pathway_view = r"""
       ___,--"'"`---"''^   ^  ^ ^        ^       "''"'---,..___ __,..---""'
   --"'                           ^                         ``--..,__
     """
+
+blood_fairy = r"""
+               >i                                                                                   
+               <>   ^                                                      ^==+|                    
+               >>_ )|                                                [>"==^^^+/=^                   
+               <><<<                                             ZCt{i|/=;                          
+                >))>                                          Xyuo[*c\/=^;;;_                       
+                 v%v>                                      Qfuzoee1?l\=^;;,;,;'                     
+                  **x%)                                  Zut]toLTTLtl"^'    -,_                     
+                  11!*rcllv                            #1??1jC22fj?/                                
+                  zjTott!Ir_                      )it1!?[ouf2F3Joc                                  
+                   ufm6m5y#z1                    [{}?]1toL#CJTj!+                                   
+                     SEXgVXd6f                  FzI?]11ttt1!Il%)_                                   
+                       XGPEGbGq                Zn}]eozu#Le1s>|//+'                                  
+                        YGgddP46              A#rI1teL#To!li\=_^"\iv                                
+                          4VdVVgg            Sjrl}!tooo1?\ >cccxc%i)                                
+                      1w5g4E4Vpd4g#J       Y31r%c{}?*c `%ccccxxx                                    
+                     6db&DKkSfz55TC2    Qdfo}ciicawLe1Irrslcxv\"                                    
+                  #ujZkYO&A6Tyw!]fdE46YPfe}%>i{TV4S2yw7{cxc     _^                                  
+                   [jz3b6!aFFw}rCqgE4kgj!x))lumghVdqwL]lv  QFe)"/)                                  
+                    8Jpp5py#1r%sofV46mdpa{vleC325F2fw##ne]I**rx%%r!onwffCn1l>|/+=^;_                
+                     1ri){[?%|vc?]?e#fZUCIrlr{**{I?!I{{{{*}**I*!a7z77zLLj[x|/+===^^;;:              
+                    _^^;:;/"^|{2hea}[JCgpls*cxv>   ^)cr{*I?![t1!eej7o[{cv\=_        '               
+                   i/;_Qyp    .EfaTT{}L7Xec{*r}}n4j!       {[Iv>>         =^                        
+                   )"  6u?L  UhuCg?LL7e[2zc\)\%cwZJ*{I?        ^=                                   
+                   ^;;^=/\ KgquJgw| v}[ee]l^=/=/\pV{x*?![]  1!  ^                                   
+                    ^^^: OS6J*[nu?I    ')lcI{l)"|u4!x  !!1t#e1                                      
+                        SqTt|\rrcv|        ww}%> ubj[#Jv]III}]!II                                   
+                      jaeL1 v|/l<'|<c*     6V[x  ehS]11I{v<)v????I}*                                
+                     aIc l% v):*iv rlr     2#[*to#JjI}rrz#l>   *}}**{{*                             
+                     {llI?t]c1  I*         a1!!t1t[I{?{ bzo%lQ    rssslc%v                          
+                     |crI][1               "II*i Tt]    S##!*1l>     vvv%i><)^                      
+                                                QVj=    plI*{>r]I<     /|)\<\|"//                   
+                                               ASy?v     |=i<>)vl}!?      /\\\\\                
+                                               ut}>xx    "| \\\:t!!??I      +//"/\                
+                                               %v%x*{r            {}IIsx<     ///+///'              
+                                                ics*{o              %lcl%i'       =+//+             
+                                                  o                   <iiv><         +=             
+                                                                         >)))><|      '             
+                                                                                     
+
+"""
+
+dark_witch = r"""
+                                                                                                    
+                                                                ;^;'                                
+                                       "<%i)ii)"             ',^/+^;'',Q                            
+                                   s>vlc%%%vvvii)>\/"     v;==//;,_,:_'=+                           
+                                ?uujtIr%%%%viiiiii)<\)")|/|/||/:'                                   
+                              TnJT#njo1*civvii)))>>>><><\\||"=:'                                    
+                            l!nfCnL7oea1!s%ii))><\)|"/"|/+/+;'                                      
+             {vv%%<<>)i>\v%r*}**]teoea1]!I*x))<|)^s    ' .`                                         
+        >i))>>)>)i)ivi))iiiv%vv%%xcl*III?*{rc)=>                                                    
+      +/|))|"////""%{i)>))))>>)ivvvvv%%xxxx<;                                                     
+      )+"|\)|||""=!SdfeI%>>))))>>>)iiii))))\i                                                     
+        ,="|)<\)||/IX4Vgp3#er>>>>>>><<<>>)>>>|=                                                     
+           ;/"||\\"uXEGYbV22yu}v<\\><<<<\<<<<)^                                                     
+              ';=/+!EPbVqbAkEh6fL]s%>\)||||||////+==+,;^I                                           
+                   Eb44ye@RD$b5w22562wTLzoeaaos=/=^;::_'{                                           
+                  YYb4VhVZkbE633fwJ344EggXXPPGX]_''_.'                                              
+                  bOEhVVgSmF222yffJJdggXXXPPGZbZK                                                   
+                  PXm3mgqmFww323yfC#gGPGGZZbYYkkP    Xk&A&$X                                        
+                  Fu  >JC?>yF6FywJJJFYbYYYkkOAA8OOkY8U$$88&k                                        
+                          w32ywnuounnPAAA&&888U$@$$@BWKU                                            
+                                  `\}#k$$U$$@@KKKDBBWBKQ                                            
+                                 ?rvi1JE$BBBBBBWNNRRUY                                              
+                                 ?xvi%*iIJSXk&8&kE5ev"//_                                           
+                                 |ivii))<<<>i%%vi\\\<><\|^'                                         
+                                 xcviiiiiiii)>>>)>>>>><<<)/;                                        
+                                 %liiiiiiiiii)))))>>><<<\\\|;>                                      
+                                 cliviiiiiiii)))))>>>><<\\)\",                                      
+                                <vriviiiiiiii)))))>>>><<\\)))=/                                     
+                                ^>rviiiiiiiii)))))>>>><<\\)\)/;                                     
+                               |/>c%))))>>)ii)))))>>>><<\\)))/=            {?[aaaat1                
+                               ;\<\>><><<>)ii)))))>>>><<\\)\\^^          s?[teo7z77zzzjS            
+                            w!,=/'`'|\||>iiiii))))>>>><<\\))",n        ir?[111aeo7jjjj7jq           
+                            oeIi)n[<<|))iiiii)))))>>>><<\\)\=;   _)t  cl}I}I?!]1ao77joo             
+               \='-..  .`  !tt}x!7a!rIl>)iiii)))))>>>><<\\))/+^'_^|ac>%rrr{*I?![1teozjzja^          
+              +/+:``````./tTr=: I71IL6FJr>>)i)))))>>>><<\\))))//^,_V>)ccrs{*I?![1tteo7LnjLLuu       
+              =+=,,;;;:;'|#Ll\;=z##jll*h4C!ciiiii)))>><<<\)))|"/^:-b)>ccrs{*I?![1tteo7zju##Le       
+              /++/==^;;^'+T#wJLjyffT";,xFdgfl=)\\<\<<\\\))|"/=^:',:Vc)%cls{*I?![1tteo7zLuu7!        
+              I"^"^     </;',Q))>)<ll;^`Iy?\,-. :"^||==^;^+'         =<%rs{}I?![1tteo7juje!         
+                       Ix%)|,;::-          ';,-`                       )vl{}I?![1tae7jzo[           
+                         !l))=:-`          '-:=,/                        %rs*?[1taeeoa1!            
+                             <           l/"\<\ii                          'xs*I!!1[!s              
+                                         ?=is}                                                      
+
+"""
