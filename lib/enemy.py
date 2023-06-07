@@ -3,16 +3,26 @@ pass
 
 # Currently Done 
 # Location Table
+# currentplayer to currentlocation
 
 
-
-# Player Table
-# Enemy Table
+# Need to Finish
+# Player Table W/ ABilities
+# Enemy Table W/ Abilities
 # Ability Table
-# Cli prompts and imput specification ()
+# Cli prompts and imput specification 
+# Save functionality? 
 
 
+# Writing out functionality for CURRRENT ABILITIES 
+# for Player needs to be defined by:
+# Selected player
+# needs to be back populate player by abilities 
+# How should be called? ids both moves
+# 
+# for enemy needs to be same
 
+# writing functionality for Enemy 
 
 # Need to get current locatin to connect player id
 # Need to get Foreign key's to work properly 
@@ -21,11 +31,6 @@ pass
 # need a selectedclass, currentlocation, currentabilities, 
 # Created Class id for player to grab with input 
 
-# Need to do
-# need to link current_player = current_location  
-# need to also link current_player to current_abilities
-# need to have it persist in db
-# Save functionality? 
 
 # Need a current Enenmy as well
 # Define current player class 
@@ -34,10 +39,6 @@ pass
 # needs to have input for activityy and based of where location is Location.name 
 # allow player to grab id of said 
 # DONE with player_choice
-
-# Define current loaction 
-# Select current id need to run another example like player_choice 
-# make chosenLocation 
 
 # Define current abilities
 # connect id  for player usong a foreign key 
