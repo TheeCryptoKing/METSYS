@@ -53,9 +53,9 @@ if __name__ == '__main__':
     # MVP = Str, Spe, hp, xp, Weapon
         Slayer = Player(
                         name="Slayer",
-                        # primary_attack=1,
-                        # secondary_attack=2,
                         location_id=1,
+                        primary_attack=1,
+                        secondary_attack=2,
                         Strength=10,
                         Speed=15,
                         Weapon="Dual Katanas",
@@ -65,9 +65,9 @@ if __name__ == '__main__':
                         )
         Warrior = Player(
                         name="Warrior",
-                        # primary_attack=3,
-                        # secondary_attack=4,
                         location_id=1,
+                        primary_attack=3,
+                        secondary_attack=4,
                         Strength=15,
                         Speed=10,
                         Weapon="Champions Broadsword", 
@@ -77,9 +77,9 @@ if __name__ == '__main__':
                         )
         Mage = Player(
                     name="Mage", 
-                    # primary_attack=5,
-                    # secondary_attack=6,
                     location_id=1, 
+                    primary_attack=5,
+                    secondary_attack=6,
                     Strength=15, 
                     Speed=10, 
                     Weapon="Surasshu", 
@@ -98,8 +98,6 @@ if __name__ == '__main__':
         BOSS_FF = Enemy(
             name="Blood Magic Queen",
             location_id=3,
-            # primary_attack=7,
-            # secondary_attack=8,
             hp=40, 
             xp_given=30,
             intellect=50,
@@ -110,8 +108,6 @@ if __name__ == '__main__':
         Harpies = Enemy(
             name="TigerClaw Harpy",
             location_id=3,
-            # primary_attack=9,
-            # secondary_attack=10,
             hp=20,
             xp_given=20,
             intellect=20,
@@ -122,8 +118,6 @@ if __name__ == '__main__':
         Fairies = Enemy(
             name="Blood Magic Fairy",
             location_id=3,
-            # primary_attack=11,
-            # secondary_attack=12,
             hp=10,
             xp_given=10,
             intellect=18,
@@ -134,8 +128,6 @@ if __name__ == '__main__':
         Witchs = Enemy(
             name="Dark Witch",
             location_id=3,
-            # primary_attack=13,
-            # secondary_attack=14,
             hp=15,
             xp_given=15,
             intellect=15,
@@ -146,12 +138,10 @@ if __name__ == '__main__':
         session.add_all([BOSS_FF, Harpies, Fairies, Witchs])
         session.commit()
 
-    
     declare_locations()
     declare_player()
     declare_FF_enemy()
 
-    
     # place inside cli.py
     # player_choice = input("Choose a player (Slayer, Mage, Warrior): ") 
     # if current_player:
@@ -169,34 +159,35 @@ if __name__ == '__main__':
     # CURRENT LOCATION
     current_location = session.scalars(select(Location).where(Location.name.like(player_location))).first()
     
+    # DONT NEED
     # join function for PLAYER and ABILITIES 
-    # DEFINED BY PLAYER.ID
-    # dem_hero_attack1 = session.scalars(
-    #     select(Player, Abilities).join(Player.primary_attack)
+    # DEFINED BY PLAYER.ID db is loading without Join somehow
+    # dem_hero_attackOne = session.scalars(
+    #     select(Player, Abilities).join(Player.attack1)
     # )
-    # dem_hero_attack2 = session.scalars(
-    #     select(Player, Abilities).join(Player.secondary_attack)
+    # dem_hero_attackTwo = session.scalars(
+    #     select(Player, Abilities).join(Player.attack2)
     # )
     # # test data for PLAYER ABILITIES 
-    # for player in dem_hero_attack1:
-    #     print(f"{player.name} | {player.primary_attack}")
-    # for player in dem_hero_attack2:
-    #     print(f"{player.name} | {player.secondary_attack}")
+    # for hero in dem_hero_attackOne:
+    #     print(f"{hero.name} | {hero.attack1.name}")
+    # for hero in dem_hero_attackTwo:
+    #     print(f"{hero.name} | {hero.attack2.name}")
         
 
     # # join function for ENEMY and ABILITIES
     # # DEFINED BY ENEMY.ID
     # dem_enemy_attack1 = session.scalars(
-    #     select(Enemy, Abilities).join(Enemy.primary_attack)
+    #     select(Enemy, Abilities).join(Enemy.attack1)
     # )
     # dem_enemy_attack2 = session.scalars(
-    #     select(Enemy, Abilities).join(Enemy.secondary_attack)
+    #     select(Enemy, Abilities).join(Enemy.attack2)
     # )
-    # test data for ENEMY ABILITIES
+    # # test data for ENEMY ABILITIES
     # for enemy in dem_enemy_attack1:
-    #     print(f"{enemy.name} | {enemy.primary_attack}")
+    #     print(f"{enemy.name} | {enemy.attack1.name}")
     # for enemy in dem_enemy_attack1:
-    #     print(f"{enemy.name} | {enemy.secondary_attack}")
+    #     print(f"{enemy.name} | {enemy.attack2.name}")
 
     # CURRENT ENEMY LOCATION 
     Evil_peoples_hood = session.scalars(
@@ -215,8 +206,9 @@ if __name__ == '__main__':
         if current_player.name == player.name:
             print(f"{player.name} | {player.location.name}")
             
-    ipdb.set_trace()
+
     session.close()
+    # ipdb.set_trace()
     # put ipdb where i want to play with it
 
 

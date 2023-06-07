@@ -4,12 +4,12 @@ pass
 # Currently Done 
 # Location Table
 # currentplayer to currentlocation
+# Player Table W/ ABilities
+# Ability Table
 
 
 # Need to Finish
-# Player Table W/ ABilities
 # Enemy Table W/ Abilities
-# Ability Table
 # Cli prompts and imput specification 
 # Save functionality? 
 
@@ -84,6 +84,53 @@ pass
 # foreignkey var = back_population variable
 
 # Scrapped ideas
+
+    # declare_FF_enemy = [
+    #         Enemy(
+    #             name="Blood Magic Queen",
+    #             location_id=3,
+    #             hp=40, 
+    #             xp_given=30,
+    #             intellect=50,
+    #             speed=25,
+    #             strength=25,
+    #             weapon="Blood Scythe"
+    #             ),
+    #         Enemy(
+    #             name="TigerClaw Harpy",
+    #             location_id=3,
+    #             hp=20,
+    #             xp_given=20,
+    #             intellect=20,
+    #             speed=20,
+    #             strength=20,
+    #             weapon="TigerClaws"
+    #             ),
+    #         Enemy(
+    #             name="Blood Magic Fairy",
+    #             location_id=3,
+    #             hp=10,
+    #             xp_given=10,
+    #             intellect=18,
+    #             speed=15,
+    #             strength=15,
+    #             weapon="Bood Magic"
+    #             ),
+    #         Enemy(
+    #             name="Dark Witch",
+    #             location_id=3,
+    #             hp=15,
+    #             xp_given=15,
+    #             intellect=15,
+    #             speed=15,
+    #             strength=15,
+    #             weapon="Witch Wand"
+    #             )
+    #     ]
+    # session.bulk_save_objects(declare_FF_enemy)
+    # session.commit()
+    
+    
     # Slayer.abilities = 1."Shizuka", 2."Starburst Stream"
     # Warrior.abilities = 3. "Whirlwind Strike" , 4."Headstrong"
     # Mage.abilities = 5."Serpentine Slash", 6."Expelliarmus"
@@ -227,8 +274,21 @@ pass
     
     # primary_attack=1,
     # secondary_attack=2,
+    # primary_attack=3,
+    # secondary_attack=4,
+    # primary_attack=5,
+    # secondary_attack=6,
+    # primary_attack=7,
+    # secondary_attack=8,
+    # primary_attack=9,
+    # secondary_attack=10,
+    # primary_attack=11,
+    # secondary_attack=12,
+    # primary_attack=13,
+    # secondary_attack=14,
     # to 16
     
+
         # def ability_declare():
     #     # attributes: prim, sec, name, attack
     #     # Heroes
