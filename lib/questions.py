@@ -90,7 +90,7 @@ guild_questions = [
     {
         'type': 'input',
         'name': 'base stats',
-        'message': f"{new_page}It looks like you have already received some training, your base stats are quite developed. \n Hp: 10 \n Strength: 10 \n Speed: 10 \n Intellect: 10 \n Xp: 0 \n Press enter to continue..."
+        'message': f"{new_page}It looks like you have already received some training, your base stats are quite developed. \n Stats: \nHp: 10 \nStrength: 10 \nSpeed: 10 \nIntellect: 10 \nXp: 0 \n Press enter to continue..."
     },
     {
         "type": "list",
@@ -101,21 +101,21 @@ guild_questions = [
     {
         'type': 'list',
         'name': 'weapon',
-        'message': f"{new_page}Slayer: {slayer_weapon} \nA wise choice indeed. These lands are crawling with dangerous monsters and I would hope to see you again. \nPlease choose a weapon from our Slayer selection.",
+        'message': f"{new_page}You selected the Slayer Class: {slayer_weapon} \nA wise choice indeed. These lands are crawling with dangerous monsters and I would hope to see you again. \nPlease choose a weapon from our Slayer selection.",
         'when': lambda answers: answers['class'] == 'Slayer',
         'choices': ['Enma', 'Zangetsu', 'Demon Dwellers']
     },
     {
         'type': 'list',
         'name': 'weapon',
-        'message': f"{new_page}Warrior: {warrior_weapon} \nA wise choice indeed. These lands are crawling with dangerous monsters and I would hope to see you again. \nPlease choose a weapon from our Warrior selection.",
+        'message': f"{new_page}You selected the Warrior Class: {warrior_weapon} \nA wise choice indeed. These lands are crawling with dangerous monsters and I would hope to see you again. \nPlease choose a weapon from our Warrior selection.",
         'when': lambda answers: answers['class'] == 'Warrior',
         'choices': ['Excalibur', 'Dragon Slayer', 'Rune 2h Sword']
     },
     {
         'type': 'list',
         'name': 'weapon',
-        'message': f"{new_page}Mage: {mage_weapon} \nA wise choice indeed. These lands are crawling with dangerous monsters and I would hope to see you again. \nPlease choose a weapon from our Mage selection.",
+        'message': f"{new_page}You selected the Mage Class: {mage_weapon} \nA wise choice indeed. These lands are crawling with dangerous monsters and I would hope to see you again. \nPlease choose a weapon from our Mage selection.",
         'when': lambda answers: answers['class'] == 'Mage',
         'choices': ['Wizard Staff', 'The Elder Wand', 'Energy Sword']
     }
@@ -216,7 +216,7 @@ hype_for_battle_questions = [
     {
         'type': 'input',
         'name': 'battle hype',
-        'message': f"{new_page}{hype_for_battle}\nI'm not the same person I was before I became a {current_player.className}!!! \n Stats: \n Hp: {current_player.hp} \n Strength: {current_player.Strength} \n Speed: {current_player.Speed} \n Intellect: {current_player.intellect} \n Xp: {current_player.xp} \n Equipped Weapon: {new_weapon} \nAbilities: \nPrimary: {current_player.primary_attack} \nSecondary: {current_player.secondary_attack}"
+        'message': f"{new_page}{hype_for_battle}\nI'm not the same person I was before I became a {current_player.className}!!! \n Stats: \nHp: {current_player.hp} \nStrength: {current_player.Strength} \nSpeed: {current_player.Speed} \nIntellect: {current_player.intellect} \nXp: {current_player.xp} \nEquipped Weapon: {new_weapon} \nAbilities: \nPrimary: {current_player.primary_attack} \nSecondary: {current_player.secondary_attack}"
     }
 ]
 
