@@ -72,12 +72,12 @@ name_question = [
     },
 ]
 name_answer = prompt(name_question, style=custom_styles)
-name = name_answer['name']
+new_name = name_answer['name']
 introduction_questions = [
     {
         'type': 'input',
         'name': 'follow me',
-        'message': f"{new_page}{name}, you look quite strong I must say, would you care to follow me to the guild?\nPress enter to follow Greem..."
+        'message': f"{new_page}{new_name}, you look quite strong I must say, would you care to follow me to the guild?\nPress enter to follow Greem..."
     },
 ]
 introduction_answer = prompt(introduction_questions, style=custom_styles)
@@ -122,22 +122,44 @@ guild_questions = [
 ]
 guild_answers = prompt(guild_questions, style=custom_styles)
 class_choice = guild_answers['class']
-weapon = guild_answers['weapon']
+new_weapon = guild_answers['weapon']
 
-# current_player = session.scalars(select(Player).where(Player.name.like(class_choice))).first()
-ability1 = session.query(Abilities).where(Abilities.id == 1).limit(1)
-ability2 = session.query(Abilities).where(Abilities.id == 2).limit(1)
+# base_data = session.scalars(select(Player).where(Player.className.like(class_choice))).first()
+base_data = session.scalars(select(Player).where(Player.className.contains(class_choice))).first()
+# base_data = session.scalars(select(Player).where(Player.className.in_([class_choice])))
+location = session.query(Location).get(base_data.location_id).name
+primary_attack = session.query(Abilities).get(base_data.primary_attack).name
+secondary_attack = session.query(Abilities).get(base_data.secondary_attack).name
+def define_current_player():
+   
+    player = Player(
+    name=new_name,
+    className=class_choice,
+    Weapon=new_weapon,
+    location_id=location,
+    primary_attack=primary_attack,
+    secondary_attack=secondary_attack,
+    Strength=base_data.Strength,
+    Speed=base_data.Speed,
+    hp=base_data.hp,
+    intellect=base_data.intellect,
+    xp=base_data.xp
+    )
+    session.add(player)
+    session.commit()
+    return player
+current_player = define_current_player()
 
 goodbye_questions = [
     {
         'type': 'input',
         'name': 'selected',
-        'message': f"{new_page}For a {class_choice} such as yourself, {weapon} is a great choice. \n Press enter to continue..."
+        'message': f"{new_page}For a {class_choice} such as yourself, {new_weapon} is a great choice. \n Press enter to continue..."
     },
     {
         'type': 'input',
         'name': 'goodbye',
-        'message': f"{new_page}{city_view}\nWell then! It was great meeting you {name}. \nIf you follow these houses and head straight down this road you'll arrive at the gates to the Magic Forest. \nI wish you great luck in these turbulent lands.\nPress enter to continue..."
+        'message': f"{new_page}{city_view}\nWell then! It was great meeting you {new_name}. \nIf you follow these houses and head straight down this road you'll arrive at the gates to the Magic Forest. \nI wish you great luck in these turbulent lands.\nPress enter to continue..."
     },
     {
         'type': 'input',
@@ -152,7 +174,7 @@ pathway_questions = [
     {
         'type': 'input',
         'name': 'pathway',
-        'message': f"{new_page}{forest_path}\nAhhhh, I'm feeling pretty nervous. I boosted my stats by choosing the {class_choice} class and I got {weapon} from Greem.\nI'm more ready now than I'll ever be..."
+        'message': f"{new_page}{forest_path}\nAhhhh, I'm feeling pretty nervous. I boosted my stats by choosing the {class_choice} class and I got {new_weapon} from Greem.\nI'm more ready now than I'll ever be..."
     },
     {
         'type': 'input',
@@ -168,6 +190,9 @@ pathway_questions = [
 
 pathway_answers = prompt(pathway_questions, style=custom_styles)
 
+
+
+
 pre_battle_blood_fairy = [
     {
         'type': 'input',
@@ -175,6 +200,8 @@ pre_battle_blood_fairy = [
         'message': f"{new_page}{blood_fairy}\nWoahhh!!! \nIt's a Blood Fairy!!! \nSKREEEEEEEEE!"
     }
 ]
+
+
 pre_battle_dark_witch = [
     {
         'type': 'input',
@@ -189,15 +216,16 @@ hype_for_battle_questions = [
     {
         'type': 'input',
         'name': 'battle hype',
-        'message': f"{new_page}{hype_for_battle}\nI'm not the same person I was before I became a {class_choice}!!! \n Stats: \n Hp: {current_player.hp} \n Strength: {current_player.Strength} \n Speed: {current_player.Speed} \n Intellect: {current_player.intellect} \n Xp: {current_player.xp} \n Equipped Weapon: {weapon} \nAbilities: \nPrimary: {ability1} \nSecondary: {ability2}"
+        'message': f"{new_page}{hype_for_battle}\nI'm not the same person I was before I became a {current_player.className}!!! \n Stats: \n Hp: {current_player.hp} \n Strength: {current_player.Strength} \n Speed: {current_player.Speed} \n Intellect: {current_player.intellect} \n Xp: {current_player.xp} \n Equipped Weapon: {new_weapon} \nAbilities: \nPrimary: {current_player.primary_attack} \nSecondary: {current_player.secondary_attack}"
     }
 ]
 
 hype_for_battle_answers = prompt(hype_for_battle_questions, style=custom_styles)
 
+Opps_be_buggin = "Fairies"
+Opps_be_buggin = "Dark Witch"
 import battle
 
-post_battle = [
-
-]
+session.delete(current_player)
+session.close()
 
