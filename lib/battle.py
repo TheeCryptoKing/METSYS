@@ -105,6 +105,7 @@ def battle(player, enemy):
             break
 
     print("Battle ends!")
+    import postbattle
 
 player = Player("Slayer", 100)
 enemy = Enemy("Blood Magic Queen", 150, Attack("Fireball", 10), Attack("Lightning Strike", 15))
