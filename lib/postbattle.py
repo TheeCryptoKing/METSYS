@@ -21,6 +21,11 @@ post_battle = [
     },
     {
         'type': 'input',
+        'name': 'drop',
+        'message': f"\n{skull_on_fire}\nWhat's this? It appeared on the ground as soon as the battle was finished...."
+    },
+    {
+        'type': 'input',
         'name': 'ending',
         'message': f"\n{illuminati}\nHEAR ME YOUNG TRAVELER! \nI HAVE OBSERVED YOUR BRAVERY AND WILLPOWER FROM AFAR. \nI MUST SAY, YOU SHOW GREAT PROMISE."
     }
