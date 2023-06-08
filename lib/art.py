@@ -7,7 +7,7 @@ hello_traveler = r"""
 
 
 guild_art = r"""
-        |\__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__/ 
+        |\__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__/
         |. . . . . . . . . . .[___|___|___|___|___|__]. . . . . . . . . . . . . . . .|
         | . . . . . . . . . . [_|___|___|___|___|___|] . . . . . . . . . . . . . . . |
         |. . . . . . . . . . .[___|___|___|___|___|__]. . . . . . . . . . . . . . . .|
@@ -23,9 +23,9 @@ guild_art = r"""
         |||__ !!!!!;;;!!!!=;============================;=  ||__  /____|/ .________| |
         ||/_/|!!!!!!;!!!!!![_|_|_]================[_|_|_]___|/_/|_|______/_______)(__lc
         /|' |'  |'     '|  [__|__]       `(       [__|__]   |' |'[|)(            ()   \
-         '  '   '       '  [_|_|_] o     ) (    o [_|_|_]   '  '   ()                   
+         '  '   '       '  [_|_|_] o     ) (    o [_|_|_]   '  '   ()
                            [__|__] |    ( ) )   | [__|__]                      ,
-                           [_|_|_] |---@@@@@@---| [_|_|_]         /|        ,I,       |\   
+                           [_|_|_] |---@@@@@@---| [_|_|_]         /|        ,I,       |\
                            [__|__]/!\ @@@@@@@@ /!\[__|__]          ||   ____;(;);____  ||
                           /______________________________\         ||__ !!!!!;;;!!!!!__||
           ,              |________________________________|        |/_/|!!!!!!;!!!!!!\_\|
@@ -51,7 +51,7 @@ warrior_weapon = r"""
               \>
     """
 
-mage_weapon = r"""         
+mage_weapon = r"""
                               .___.
           /)               ,-^     ^-.
          //               /           \
@@ -107,13 +107,13 @@ forest_path = r"""
           .-.="j.  "-:._.f "_
         ." __."" "-'.;"      "._f".
  .g88s..g88s.g88s..;g88s..g88s..g88s.
- 68888968888988889;688889688889688889 
+ 68888968888988889;688889688889688889
  "^88^""^88^"^88^";:"^88^"^88^""Y888^"
- ft][tftf][ftt][tfjjd][jddj][jdjj][dj 
- " ][ " "][ ""][ /  \"][ "" ][" "]["  
-                /    \                 
-               /      \                
-              /        \         
+ ft][tftf][ftt][tfjjd][jddj][jdjj][dj
+ " ][ " "][ ""][ /  \"][ "" ][" "]["
+                /    \
+               /      \
+              /        \
              /          \
     """
 
@@ -143,130 +143,130 @@ pathway_view = r"""
     """
 
 blood_fairy = r"""
-               >i                                                                                   
-               <>   ^                                                      ^==+|                    
-               >>_ )|                                                [>"==^^^+/=^                   
-               <><<<                                             ZCt{i|/=;                          
-                >))>                                          Xyuo[*c\/=^;;;_                       
-                 v%v>                                      Qfuzoee1?l\=^;;,;,;'                     
-                  **x%)                                  Zut]toLTTLtl"^'    -,_                     
-                  11!*rcllv                            #1??1jC22fj?/                                
-                  zjTott!Ir_                      )it1!?[ouf2F3Joc                                  
-                   ufm6m5y#z1                    [{}?]1toL#CJTj!+                                   
-                     SEXgVXd6f                  FzI?]11ttt1!Il%)_                                   
-                       XGPEGbGq                Zn}]eozu#Le1s>|//+'                                  
-                        YGgddP46              A#rI1teL#To!li\=_^"\iv                                
-                          4VdVVgg            Sjrl}!tooo1?\ >cccxc%i)                                
-                      1w5g4E4Vpd4g#J       Y31r%c{}?*c `%ccccxxx                                    
-                     6db&DKkSfz55TC2    Qdfo}ciicawLe1Irrslcxv\"                                    
-                  #ujZkYO&A6Tyw!]fdE46YPfe}%>i{TV4S2yw7{cxc     _^                                  
-                   [jz3b6!aFFw}rCqgE4kgj!x))lumghVdqwL]lv  QFe)"/)                                  
-                    8Jpp5py#1r%sofV46mdpa{vleC325F2fw##ne]I**rx%%r!onwffCn1l>|/+=^;_                
-                     1ri){[?%|vc?]?e#fZUCIrlr{**{I?!I{{{{*}**I*!a7z77zLLj[x|/+===^^;;:              
-                    _^^;:;/"^|{2hea}[JCgpls*cxv>   ^)cr{*I?![t1!eej7o[{cv\=_        '               
-                   i/;_Qyp    .EfaTT{}L7Xec{*r}}n4j!       {[Iv>>         =^                        
-                   )"  6u?L  UhuCg?LL7e[2zc\)\%cwZJ*{I?        ^=                                   
-                   ^;;^=/\ KgquJgw| v}[ee]l^=/=/\pV{x*?![]  1!  ^                                   
-                    ^^^: OS6J*[nu?I    ')lcI{l)"|u4!x  !!1t#e1                                      
-                        SqTt|\rrcv|        ww}%> ubj[#Jv]III}]!II                                   
-                      jaeL1 v|/l<'|<c*     6V[x  ehS]11I{v<)v????I}*                                
-                     aIc l% v):*iv rlr     2#[*to#JjI}rrz#l>   *}}**{{*                             
-                     {llI?t]c1  I*         a1!!t1t[I{?{ bzo%lQ    rssslc%v                          
-                     |crI][1               "II*i Tt]    S##!*1l>     vvv%i><)^                      
-                                                QVj=    plI*{>r]I<     /|)\<\|"//                   
-                                               ASy?v     |=i<>)vl}!?      /\\\\\                
-                                               ut}>xx    "| \\\:t!!??I      +//"/\                
-                                               %v%x*{r            {}IIsx<     ///+///'              
-                                                ics*{o              %lcl%i'       =+//+             
-                                                  o                   <iiv><         +=             
-                                                                         >)))><|      '             
-                                                                                     
+               >i
+               <>   ^                                                      ^==+|
+               >>_ )|                                                [>"==^^^+/=^
+               <><<<                                             ZCt{i|/=;
+                >))>                                          Xyuo[*c\/=^;;;_
+                 v%v>                                      Qfuzoee1?l\=^;;,;,;'
+                  **x%)                                  Zut]toLTTLtl"^'    -,_
+                  11!*rcllv                            #1??1jC22fj?/
+                  zjTott!Ir_                      )it1!?[ouf2F3Joc
+                   ufm6m5y#z1                    [{}?]1toL#CJTj!+
+                     SEXgVXd6f                  FzI?]11ttt1!Il%)_
+                       XGPEGbGq                Zn}]eozu#Le1s>|//+'
+                        YGgddP46              A#rI1teL#To!li\=_^"\iv
+                          4VdVVgg            Sjrl}!tooo1?\ >cccxc%i)
+                      1w5g4E4Vpd4g#J       Y31r%c{}?*c `%ccccxxx
+                     6db&DKkSfz55TC2    Qdfo}ciicawLe1Irrslcxv\"
+                  #ujZkYO&A6Tyw!]fdE46YPfe}%>i{TV4S2yw7{cxc     _^
+                   [jz3b6!aFFw}rCqgE4kgj!x))lumghVdqwL]lv  QFe)"/)
+                    8Jpp5py#1r%sofV46mdpa{vleC325F2fw##ne]I**rx%%r!onwffCn1l>|/+=^;_
+                     1ri){[?%|vc?]?e#fZUCIrlr{**{I?!I{{{{*}**I*!a7z77zLLj[x|/+===^^;;:
+                    _^^;:;/"^|{2hea}[JCgpls*cxv>   ^)cr{*I?![t1!eej7o[{cv\=_        '
+                   i/;_Qyp    .EfaTT{}L7Xec{*r}}n4j!       {[Iv>>         =^
+                   )"  6u?L  UhuCg?LL7e[2zc\)\%cwZJ*{I?        ^=
+                   ^;;^=/\ KgquJgw| v}[ee]l^=/=/\pV{x*?![]  1!  ^
+                    ^^^: OS6J*[nu?I    ')lcI{l)"|u4!x  !!1t#e1
+                        SqTt|\rrcv|        ww}%> ubj[#Jv]III}]!II
+                      jaeL1 v|/l<'|<c*     6V[x  ehS]11I{v<)v????I}*
+                     aIc l% v):*iv rlr     2#[*to#JjI}rrz#l>   *}}**{{*
+                     {llI?t]c1  I*         a1!!t1t[I{?{ bzo%lQ    rssslc%v
+                     |crI][1               "II*i Tt]    S##!*1l>     vvv%i><)^
+                                                QVj=    plI*{>r]I<     /|)\<\|"//
+                                               ASy?v     |=i<>)vl}!?      /\\\\\
+                                               ut}>xx    "| \\\:t!!??I      +//"/\
+                                               %v%x*{r            {}IIsx<     ///+///'
+                                                ics*{o              %lcl%i'       =+//+
+                                                  o                   <iiv><         +=
+                                                                         >)))><|      '
+
 
 """
 
 dark_witch = r"""
-                                                                                                    
-                                                                ;^;'                                
-                                       "<%i)ii)"             ',^/+^;'',Q                            
-                                   s>vlc%%%vvvii)>\/"     v;==//;,_,:_'=+                           
-                                ?uujtIr%%%%viiiiii)<\)")|/|/||/:'                                   
-                              TnJT#njo1*civvii)))>>>><><\\||"=:'                                    
-                            l!nfCnL7oea1!s%ii))><\)|"/"|/+/+;'                                      
-             {vv%%<<>)i>\v%r*}**]teoea1]!I*x))<|)^s    ' .`                                         
-        >i))>>)>)i)ivi))iiiv%vv%%xcl*III?*{rc)=>                                                    
-      +/|))|"////""%{i)>))))>>)ivvvvv%%xxxx<;                                                     
-      )+"|\)|||""=!SdfeI%>>))))>>>)iiii))))\i                                                     
-        ,="|)<\)||/IX4Vgp3#er>>>>>>><<<>>)>>>|=                                                     
-           ;/"||\\"uXEGYbV22yu}v<\\><<<<\<<<<)^                                                     
-              ';=/+!EPbVqbAkEh6fL]s%>\)||||||////+==+,;^I                                           
-                   Eb44ye@RD$b5w22562wTLzoeaaos=/=^;::_'{                                           
-                  YYb4VhVZkbE633fwJ344EggXXPPGX]_''_.'                                              
-                  bOEhVVgSmF222yffJJdggXXXPPGZbZK                                                   
-                  PXm3mgqmFww323yfC#gGPGGZZbYYkkP    Xk&A&$X                                        
-                  Fu  >JC?>yF6FywJJJFYbYYYkkOAA8OOkY8U$$88&k                                        
-                          w32ywnuounnPAAA&&888U$@$$@BWKU                                            
-                                  `\}#k$$U$$@@KKKDBBWBKQ                                            
-                                 ?rvi1JE$BBBBBBWNNRRUY                                              
-                                 ?xvi%*iIJSXk&8&kE5ev"//_                                           
-                                 |ivii))<<<>i%%vi\\\<><\|^'                                         
-                                 xcviiiiiiii)>>>)>>>>><<<)/;                                        
-                                 %liiiiiiiiii)))))>>><<<\\\|;>                                      
-                                 cliviiiiiiii)))))>>>><<\\)\",                                      
-                                <vriviiiiiiii)))))>>>><<\\)))=/                                     
-                                ^>rviiiiiiiii)))))>>>><<\\)\)/;                                     
-                               |/>c%))))>>)ii)))))>>>><<\\)))/=            {?[aaaat1                
-                               ;\<\>><><<>)ii)))))>>>><<\\)\\^^          s?[teo7z77zzzjS            
-                            w!,=/'`'|\||>iiiii))))>>>><<\\))",n        ir?[111aeo7jjjj7jq           
-                            oeIi)n[<<|))iiiii)))))>>>><<\\)\=;   _)t  cl}I}I?!]1ao77joo             
-               \='-..  .`  !tt}x!7a!rIl>)iiii)))))>>>><<\\))/+^'_^|ac>%rrr{*I?![1teozjzja^          
-              +/+:``````./tTr=: I71IL6FJr>>)i)))))>>>><<\\))))//^,_V>)ccrs{*I?![1tteo7LnjLLuu       
-              =+=,,;;;:;'|#Ll\;=z##jll*h4C!ciiiii)))>><<<\)))|"/^:-b)>ccrs{*I?![1tteo7zju##Le       
-              /++/==^;;^'+T#wJLjyffT";,xFdgfl=)\\<\<<\\\))|"/=^:',:Vc)%cls{*I?![1tteo7zLuu7!        
-              I"^"^     </;',Q))>)<ll;^`Iy?\,-. :"^||==^;^+'         =<%rs{}I?![1tteo7juje!         
-                       Ix%)|,;::-          ';,-`                       )vl{}I?![1tae7jzo[           
-                         !l))=:-`          '-:=,/                        %rs*?[1taeeoa1!            
-                             <           l/"\<\ii                          'xs*I!!1[!s              
-                                         ?=is}                                                      
+
+                                                                ;^;'
+                                       "<%i)ii)"             ',^/+^;'',Q
+                                   s>vlc%%%vvvii)>\/"     v;==//;,_,:_'=+
+                                ?uujtIr%%%%viiiiii)<\)")|/|/||/:'
+                              TnJT#njo1*civvii)))>>>><><\\||"=:'
+                            l!nfCnL7oea1!s%ii))><\)|"/"|/+/+;'
+             {vv%%<<>)i>\v%r*}**]teoea1]!I*x))<|)^s    ' .`
+        >i))>>)>)i)ivi))iiiv%vv%%xcl*III?*{rc)=>
+      +/|))|"////""%{i)>))))>>)ivvvvv%%xxxx<;
+      )+"|\)|||""=!SdfeI%>>))))>>>)iiii))))\i
+        ,="|)<\)||/IX4Vgp3#er>>>>>>><<<>>)>>>|=
+           ;/"||\\"uXEGYbV22yu}v<\\><<<<\<<<<)^
+              ';=/+!EPbVqbAkEh6fL]s%>\)||||||////+==+,;^I
+                   Eb44ye@RD$b5w22562wTLzoeaaos=/=^;::_'{
+                  YYb4VhVZkbE633fwJ344EggXXPPGX]_''_.'
+                  bOEhVVgSmF222yffJJdggXXXPPGZbZK
+                  PXm3mgqmFww323yfC#gGPGGZZbYYkkP    Xk&A&$X
+                  Fu  >JC?>yF6FywJJJFYbYYYkkOAA8OOkY8U$$88&k
+                          w32ywnuounnPAAA&&888U$@$$@BWKU
+                                  `\}#k$$U$$@@KKKDBBWBKQ
+                                 ?rvi1JE$BBBBBBWNNRRUY
+                                 ?xvi%*iIJSXk&8&kE5ev"//_
+                                 |ivii))<<<>i%%vi\\\<><\|^'
+                                 xcviiiiiiii)>>>)>>>>><<<)/;
+                                 %liiiiiiiiii)))))>>><<<\\\|;>
+                                 cliviiiiiiii)))))>>>><<\\)\",
+                                <vriviiiiiiii)))))>>>><<\\)))=/
+                                ^>rviiiiiiiii)))))>>>><<\\)\)/;
+                               |/>c%))))>>)ii)))))>>>><<\\)))/=            {?[aaaat1
+                               ;\<\>><><<>)ii)))))>>>><<\\)\\^^          s?[teo7z77zzzjS
+                            w!,=/'`'|\||>iiiii))))>>>><<\\))",n        ir?[111aeo7jjjj7jq
+                            oeIi)n[<<|))iiiii)))))>>>><<\\)\=;   _)t  cl}I}I?!]1ao77joo
+               \='-..  .`  !tt}x!7a!rIl>)iiii)))))>>>><<\\))/+^'_^|ac>%rrr{*I?![1teozjzja^
+              +/+:``````./tTr=: I71IL6FJr>>)i)))))>>>><<\\))))//^,_V>)ccrs{*I?![1tteo7LnjLLuu
+              =+=,,;;;:;'|#Ll\;=z##jll*h4C!ciiiii)))>><<<\)))|"/^:-b)>ccrs{*I?![1tteo7zju##Le
+              /++/==^;;^'+T#wJLjyffT";,xFdgfl=)\\<\<<\\\))|"/=^:',:Vc)%cls{*I?![1tteo7zLuu7!
+              I"^"^     </;',Q))>)<ll;^`Iy?\,-. :"^||==^;^+'         =<%rs{}I?![1tteo7juje!
+                       Ix%)|,;::-          ';,-`                       )vl{}I?![1tae7jzo[
+                         !l))=:-`          '-:=,/                        %rs*?[1taeeoa1!
+                             <           l/"\<\ii                          'xs*I!!1[!s
+                                         ?=is}
 
 """
 
 ominous_tree = r"""
                                                             ,
-                                            .__ ._       \_.          
-                                     _, _.  '  \/   \.-  /            
-                                      \/     .-_`   // |/     \,      
-                     .-""-.          \.   '   \`. ||  \.-'  /       
+                                            .__ ._       \_.
+                                     _, _.  '  \/   \.-  /
+                                      \/     .-_`   // |/     \,
+                     .-""-.          \.   '   \`. ||  \.-'  /
                     F        Y        .-.`-(   _/\ V/ \\//,-' >-'   ._,
-                   F          Y   .__/   `. \.   ' J   ) ./  / __._/  
+                   F          Y   .__/   `. \.   ' J   ) ./  / __._/
                   J         \, I    '   _/ \  \  | |  / /  .'-'.-' `._,
-           (       L   \_.--.| \_.      ' .___ `\: | / .--'.-'"     \ 
-         \ '\    .  L   /    \\/        ._/`-.`  \ .'.' .'---./__   ' 
-    \__  '\ ) \._/   `-.__. ` \\_. '   .---.  \     /  /  ,   `  `    
-  --'  \\  ): // \,            `-.`__.'     `- \  /   / _/-.---.__.- . 
+           (       L   \_.--.| \_.      ' .___ `\: | / .--'.-'"     \
+         \ '\    .  L   /    \\/        ._/`-.`  \ .'.' .'---./__   '
+    \__  '\ ) \._/   `-.__. ` \\_. '   .---.  \     /  /  ,   `  `
+  --'  \\  ): // \,            `-.`__.'     `- \  /   / _/-.---.__.- .
      _.-`.'/ /'\_, ._     >--.-""'____.--"`_     '   /.'..' \   \   _/`
  _ .---._\ \'/ '__./__.-..  / .-|(    x_.-'___  |   :' /    _..---_' \
  .:' /`\ `. `..'.--'\      /.' /`-`._  `-,'   ` '   I '_.--'__--..___.--._.-
      `  `. `\/'/  _.   _.-'      _.____./ .-.--""-. .-"    ' _..-.---'   \
   -._ .--.\ / /-./     /   .---'-//.___. .-'       \__ .--.  `    `.     '`-
  ,--'/.-. ^.   .-.--.  ` _/    _//     ./   _..   .'  `.    \ \    |_.
-    /' | >.   ' | \._.-       '    _..'  `.' . `.       )    | |\  `          
-  ./ \ \'  ) c| /  \     \_..  .--'    ,\ \_/`  :    )  (`-. `.|`\\            
-   \'  / ,-.  | ` ./`  ._/ `\\'.--.,-((  `.`.__ |   _/   \    |)  `--._/`     
+    /' | >.   ' | \._.-       '    _..'  `.' . `.       )    | |\  `
+  ./ \ \'  ) c| /  \     \_..  .--'    ,\ \_/`  :    )  (`-. `.|`\\
+   \'  / ,-.  | ` ./`  ._/ `\\'.--.,-((  `.`.__ |   _/   \    |)  `--._/`
 ______'\   |  < __________  //'  //  _)   )/-._`.  (,-')  )  / \_.    /\. _____
 a:f        |  |        .__./    //  '\  |//    `.\ '\ (  (  <`   ._  '
-           >  |      _.  /   ..-\ _    _/ \_.  \ `\    \_ `---.-'__   
+           >  |      _.  /   ..-\ _    _/ \_.  \ `\    \_ `---.-'__
         . /  `-   _.'        /   `   _/|       J  /`     `-,,-----.`-.
             '  .:'          '`      '          < `   f  I //        `�\_,
               '                         \.     J        I/\_.        ./
          ___/                            `:     I  .:    K  `          `
-         \/ )                            `,   J         L             
-          )_(_                             .  F  .-'    J             
-         /    `.                           .  I  (.   . I _.-.._      
-   '    <'    \ )                     _.---.J/      :'   L -'         
- .:.     \. _.->/                        _.-'_.)     ` `-.`---.,_.    
-:<        (    \                    .--""   .F' J) `.`L.__`-.___      
-.:        |-'\_.|                          Y ..Z     ))   `--'  `-    
-.         ) | > :                            . '    :'          
+         \/ )                            `,   J         L
+          )_(_                             .  F  .-'    J
+         /    `.                           .  I  (.   . I _.-.._
+   '    <'    \ )                     _.---.J/      :'   L -'
+ .:.     \. _.->/                        _.-'_.)     ` `-.`---.,_.
+:<        (    \                    .--""   .F' J) `.`L.__`-.___
+.:        |-'\_.|                          Y ..Z     ))   `--'  `-
+.         ) | > :                            . '    :'
 """
 
 hype_for_battle = r"""
@@ -293,85 +293,85 @@ hype_for_battle = r"""
 """
 
 ability_starburst = r"""
-                                               ;::::"                                               
-                                             |=;;,,;"v\                                             
-                                            l%|^:^+>ls)                                             
-                                            i>\i)ilIi\+=                                            
-                                             '|f#}IgL",                                             
-                                             ?|wk@&$5cZ                                             
-                                          ,=/x>=cCTv)?r>|:                                          
-                                         +,,^+iv="==x)/=;\@                                         
-                                         =;::,wu)//+)>)):/f                                         
-                                        !\;:'rjIrI*))\|^:;;"                                        
-                                       /\/^,:>vi|\\<x"+:':;+<                                       
-                                     I::''''':/<=++/x>;'''':;+x                                     
-                                    i,''';=,::|)^/+=))^::;;,:,/}n                                   
-                                 Ql=,''_';;::="=^)\+/</;:,;,'::^\f                                  
-                                6';:':,/__-';)/,=cc=,|i^,___="^;:eN                                 
-                               ccc)';^/Q  _:"";;;,,,,+%v;'   .[riIn7Ll                              
-                           S{>"?!aov=    ::,=^;,,,;,;:|\,::     QS5g55Fw#                           
-                       Q4w1ri)*q#1      .:'="+^::::,:+)v\^;        W@gpazjfgg                       
-                   2bGEdmwjtj  QQQ      ^^:\<'::;;,^,\{*c;=/          i`))?ofFh45                   
-              D o17T5gbY$B             ;^,;^;::,^;:^^,')c+;=,           xc;."%3YPES2C               
-           "|=c%x}o3GQ                 :,:=+:':,,:::;;::=/;^:                   Q@Gggyz!<           
-         ;";/{Teub.                    ,::="'':,,,:,;,''<>;;,                       Wd2TaIs{        
-      63IoPR0QK                         ';^;'':,;,::;,''+|=::                           &#1?fZk     
-      GhXQQQ                            :=/''':,,,::::'''"):                              Qr3OQ     
-                                        ^^=''':::,::::''_||;`                                       
+                                               ;::::"
+                                             |=;;,,;"v\
+                                            l%|^:^+>ls)
+                                            i>\i)ilIi\+=
+                                             '|f#}IgL",
+                                             ?|wk@&$5cZ
+                                          ,=/x>=cCTv)?r>|:
+                                         +,,^+iv="==x)/=;\@
+                                         =;::,wu)//+)>)):/f
+                                        !\;:'rjIrI*))\|^:;;"
+                                       /\/^,:>vi|\\<x"+:':;+<
+                                     I::''''':/<=++/x>;'''':;+x
+                                    i,''';=,::|)^/+=))^::;;,:,/}n
+                                 Ql=,''_';;::="=^)\+/</;:,;,'::^\f
+                                6';:':,/__-';)/,=cc=,|i^,___="^;:eN
+                               ccc)';^/Q  _:"";;;,,,,+%v;'   .[riIn7Ll
+                           S{>"?!aov=    ::,=^;,,,;,;:|\,::     QS5g55Fw#
+                       Q4w1ri)*q#1      .:'="+^::::,:+)v\^;        W@gpazjfgg
+                   2bGEdmwjtj  QQQ      ^^:\<'::;;,^,\{*c;=/          i`))?ofFh45
+              D o17T5gbY$B             ;^,;^;::,^;:^^,')c+;=,           xc;."%3YPES2C
+           "|=c%x}o3GQ                 :,:=+:':,,:::;;::=/;^:                   Q@Gggyz!<
+         ;";/{Teub.                    ,::="'':,,,:,;,''<>;;,                       Wd2TaIs{
+      63IoPR0QK                         ';^;'':,;,::;,''+|=::                           &#1?fZk
+      GhXQQQ                            :=/''':,,,::::'''"):                              Qr3OQ
+                                        ^^=''':::,::::''_||;`
 
 """
 
 ability_whirlwing = r"""
-                                   hh4h65yfwwTo!tun                        
-                            Q4ggVh2jjj7eeeo]{{sct                          
-                        VSqSS5#TLTjaa1azt?1>                               
-                     PdgpyJJL7e}}eIItLatn                                  
-                  gm6p5#7m2ee*i%I*Ic                                       
-                hmmT1%5&6[cvirrI1e?t                                       
-              VSqh ^ n1*sv>{{l)Iv eIc[*?!In                                
-            hVhd   @X6*%{x)I{c% )%I]]{{Ic{1[tIt                            
-          ESgg V3h mg   srl7[%I*cllt!lII?I}*r??rt                          
-         XP4YS SVh       >vs))> x?ccrvxs*}I[*  ae                          
-        E4EV   J44         I>)r\**[   cvI{z7[#Lt                           
-      VEEdS     Ehq          Qe5ls!*je%trvl%!]%                            
-      mVVP8      hh4Z     2oto1{l}I?j%rv*sc]{a7                            
-        gPGbg     4E4EE )x11[!six?7olvcx?rs7!!n#e                          
-          gGYGg     VdZj[jJm  v\qTj#vscl[?)ej?[?ee>                        
-            GGPbY      ? G2juL[?aoI?r{%{x1>%1!*o[*c                        
-              YYkbZGd  )sxcir1}eTF2mpu{]{7}[r[1e]e                         
-                 EbgX5?wT??!cl{[t? ZEo[o[#2#e7n    3468PEESn               
-                     S!uw#ntIssoza*x|%%%sjbEhG$d4bX4dhEZhd4g4ShVEZ         
-                        )<c]oI%eS6*tw3J?*OXd    mXdhP    X   QdgEE4Q       
-                         |r)>v+><\i!afYwIu4YPVSdgPgEXdP4PEGEPPPPbGP        
-                     QSXGbGSv>*ytl) :xIv?c}c   QZmPPGGGgPgGgPGGGXPG        
-                 d6gdVdEgVVXH s|s%    !c)rI}*l                             
-             PGGbEEPGbXbEf    )+lv     )vcrrlcx                            
-          EXGgXbkAAYGh         "v        >ixv xi{                          
-       @kbbXEXEGb                          >ic!vI*                         
-     GOkYGGPEm                               %Is {r%                       
-   XPGb88EV444EEEX@                            ?t l![                      
-   hXhgGGdS4gGGP3                               o1v!I                      
-                                                 {v]               
+                                   hh4h65yfwwTo!tun
+                            Q4ggVh2jjj7eeeo]{{sct
+                        VSqSS5#TLTjaa1azt?1>
+                     PdgpyJJL7e}}eIItLatn
+                  gm6p5#7m2ee*i%I*Ic
+                hmmT1%5&6[cvirrI1e?t
+              VSqh ^ n1*sv>{{l)Iv eIc[*?!In
+            hVhd   @X6*%{x)I{c% )%I]]{{Ic{1[tIt
+          ESgg V3h mg   srl7[%I*cllt!lII?I}*r??rt
+         XP4YS SVh       >vs))> x?ccrvxs*}I[*  ae
+        E4EV   J44         I>)r\**[   cvI{z7[#Lt
+      VEEdS     Ehq          Qe5ls!*je%trvl%!]%
+      mVVP8      hh4Z     2oto1{l}I?j%rv*sc]{a7
+        gPGbg     4E4EE )x11[!six?7olvcx?rs7!!n#e
+          gGYGg     VdZj[jJm  v\qTj#vscl[?)ej?[?ee>
+            GGPbY      ? G2juL[?aoI?r{%{x1>%1!*o[*c
+              YYkbZGd  )sxcir1}eTF2mpu{]{7}[r[1e]e
+                 EbgX5?wT??!cl{[t? ZEo[o[#2#e7n    3468PEESn
+                     S!uw#ntIssoza*x|%%%sjbEhG$d4bX4dhEZhd4g4ShVEZ
+                        )<c]oI%eS6*tw3J?*OXd    mXdhP    X   QdgEE4Q
+                         |r)>v+><\i!afYwIu4YPVSdgPgEXdP4PEGEPPPPbGP
+                     QSXGbGSv>*ytl) :xIv?c}c   QZmPPGGGgPgGgPGGGXPG
+                 d6gdVdEgVVXH s|s%    !c)rI}*l
+             PGGbEEPGbXbEf    )+lv     )vcrrlcx
+          EXGgXbkAAYGh         "v        >ixv xi{
+       @kbbXEXEGb                          >ic!vI*
+     GOkYGGPEm                               %Is {r%
+   XPGb88EV444EEEX@                            ?t l![
+   hXhgGGdS4gGGP3                               o1v!I
+                                                 {v]
 
 """
 
 ability_expelliarmus = r"""
-                      Q Q....                                                                                                
-                   Qasv",=;,""%ro.                                                                                           
-                 t%;'-. ..'..`.`;)I                                                                                          
-            ]sU@H!-. -^vr%qJuv));_?Q                                                                                         
-            7|c#Ft)\x1whCt63LtwJ7"?Q                                                             4d               n          
+                      Q Q....
+                   Qasv",=;,""%ro.
+                 t%;'-. ..'..`.`;)I
+            ]sU@H!-. -^vr%qJuv));_?Q
+            7|c#Ft)\x1whCt63LtwJ7"?Q                                                             4d               n
              6=  `cf8kYbSyqhdgPA&G                QU88Q            X        kGZP44bPP          hgdVhSShVhgVEVq  ZXdShhV4b Q$Q
               .\'``'xuTwFgqFmgTu\"||"/="w       QOYbZbbZ4Sg4hhS6hmhgSpSqbPggGGYAggdXgYXm6mXm64F6VZQqqggggX44dhdEhXQ4dVdXVSEmh
                  ",-`|]r"ci^"\:`.`````_!ptao777L5mVh4SmFqdE4dVhVFFhVm55ggGXgPGdEP4V4ZEmh62F35hh  EEO   VE4bg6PVh4gFhY4XdpSqVX
-               JqF!IecII,      -;--:'_r&PjjTTu#24GGPGPXEgdGqE4ShE     BEE4VdhhVEPdXdSq6gYA4 Zdddh Xh3FggdE4qG$gFgSSPPbES&GGg 
-              [sTn%lzi%\`   .. ;Q   z<            ZkbkQ             nI]  |                    8XdhhgSwmggh4Y )l              
-              r*2C{*Ts:... .   :F                    
-               7uL%x>' .        /h                 
-               [uz/-.            :)n                  
-             jv)^^/+_`.......`-:)!7wQ                
-             7cv)eJw?)/||||)/>c5SFm6        
-                                       
+               JqF!IecII,      -;--:'_r&PjjTTu#24GGPGPXEgdGqE4ShE     BEE4VdhhVEPdXdSq6gYA4 Zdddh Xh3FggdE4qG$gFgSSPPbES&GGg
+              [sTn%lzi%\`   .. ;Q   z<            ZkbkQ             nI]  |                    8XdhhgSwmggh4Y )l
+              r*2C{*Ts:... .   :F
+               7uL%x>' .        /h
+               [uz/-.            :)n
+             jv)^^/+_`.......`-:)!7wQ
+             7cv)eJw?)/||||)/>c5SFm6
+
 """
 
 ability_lightning = r"""
@@ -414,4 +414,823 @@ ability_fireball = r"""
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣿⣿⣦⡀⠀⠀⣆⠀⠀⠀⣸⣿⣷⣿⣿⡿⠃⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠿⣿⣶⣤⣘⣿⣶⣶⣿⣿⣿⠿⠋⠁⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠛⠛⠛⠛⠛⠉⠀⠀⠀⠀⠀⠀⠀
+"""
+skeleton_1 = r"""
+                  .7
+                .'/
+               / /
+              / /
+             / /
+            / /
+           / /
+          / /
+         / /
+        / /
+      __|/
+    ,-\__\
+    |f-"Y\|
+    \()7L/
+     cgD                            __ _
+     |\(                          .'  Y '>,
+      \ \                        / _   _   \
+       \\\                       )(_) (_)(|}
+        \\\                      {  4A   } /
+         \\\                      \uLuJJ/\l
+          \\\                     |3    p)/
+           \\\___ __________      /nnm_n//
+           c7___-__,__-)\,__)(".  \_>-<_/D
+                      //V     \_"-._.__G G_c__.-__<"/ ( \
+                             <"-._>__-,G_.___)\   \7\
+                            ("-.__.| \"<.__.-" )   \ \
+                            |"-.__"\  |"-.__.-".\   \ \
+                            ("-.__"". \"-.__.-".|    \_\
+                            \"-.__""|!|"-.__.-".)     \ \
+                             "-.__""\_|"-.__.-"./      \ l
+"""
+
+blood_fairy_2 = r"""
+              .--.   _,
+          .--;    \ /(_
+         /    '.   |   '-._    . ' .
+        |       \  \    ,-.)  -= * =-
+         \ /\_   '. \((` .(    '/. '
+          )\ /     \ )\  _/   _/
+         /  \\    .-'   '--. /_\
+        |    \\_.' ,        \/||
+        \     \_.-';,_) _)'\ \||
+         '.       /`\   (   '._/
+           `\   .;  |  . '.
+        jgs  ).'  )/|      \
+             `    ` |  \|   |
+                     \  |   |
+                      '.|   |
+                         \  '\__
+                          `-._  '. _
+                             \`;-.` `._
+                              \ \ `'-._\
+                               \ |
+                                \ )
+                                 \_\
+"""
+blood_fairy_3 = r"""
+     /\  ,
+    {Oo\{o\    .=.
+    {o: \:.\  /   \
+   {O:'  \:.-'_.-\_)____
+    {o:.  /`~('-./-----.\
+     }o: // /|         `/\
+    {O:'// /-'         /\/\
+    }o-/( <___    \'/ /\/\/\
+   /o./  ;--._)====* -\/\/\/
+   `"`\  \        /.\  `""`
+       \  \
+        \  \
+  jgs   /`\ )
+        |/| |
+      _//  \|
+     | /   ||
+     |/   / |
+          `\|
+"""
+
+forest_scenery = r"""
+                             _()/^)
+         (^\()_               _)\<
+          >/(_     _.-.-.       \\)_
+         (/\\     (_\_|_/_)      \  `
+           /|    (__>(@)<__)     `
+           ``     (_/^|^\_)
+                    '-'-'#,  _/\
+                         `# / _/
+                     |\_ ,#|/_/
+                     \ \|#'
+                      `-#' /|
+                     /\_# | /_
+                     \_.|#,__/
+"""
+
+forest_scenery_2 = r"""
+               _(_)_                          wWWWw   _
+   @@@@       (_)@(_)   vVVVv     _     @@@@  (___) _(_)_
+  @@()@@ wWWWw  (_)\    (___)   _(_)_  @@()@@   Y  (_)@(_)
+   @@@@  (___)     `|/    Y    (_)@(_)  @@@@   \|/   (_)\
+    /      Y       \|    \|/    /(_)    \|      |/      |
+ \ |     \ |/       | / \ | /  \|/       |/    \|      \|/
+jgs|//   \\|///  \\\|//\\\|/// \|///  \\\|//  \\|//  \\\|//
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+"""
+
+
+forest_scenery_3 = r"""
+  ........::::::::::::..           .......|...............::::::::........
+     .:::::;;;;;;;;;;;:::::.... .     \   | ../....::::;;;;:::::.......
+         .       ...........   / \\_   \  |  /     ......  .     ........./\
+...:::../\\_  ......     ..._/'   \\\_  \###/   /\_    .../ \_.......   _//
+.::::./   \\\ _   .../\    /'      \\\\#######//   \/\   //   \_   ....////
+    _/      \\\\   _/ \\\ /  x       \\\\###////      \////     \__  _/////
+  ./   x       \\\/     \/ x X           \//////                   \/////
+ /     XxX     \\/         XxX X                                    ////   x
+-----XxX-------------|-------XxX-----------*--------|---*-----|------------X--
+       X        _X      *    X      **         **             x   **    *  X
+      _X                    _X           x                *          x     X_
+"""
+
+
+forest_scenery_4 = r"""
+                                               |
+                                              -x-
+                                               |
+              v .   ._, |_  .,
+           `-._\/  .  \ /    |/_
+               \\  _\, y | \//
+         _\_.___\\, \\/ -.\||
+           `7-,--.`._||  / / ,
+           /'     `-. `./ / |/_.'
+                     |    |//
+                     |_    /
+                     |-   |
+                     |   =|
+                     |    |
+--------------------/ ,  . \--------._
+"""
+
+mountain_scenery = r"""
+                                   /\        )
+   *                  *           // \_              *
+               /\                ||    \  _
+ *          /\/  \      *        |` ~   \/ \
+           //  `  \              ||   ~  \ `\     *
+          //  .    \            ///  .  \ \ ~\
+ ________///    ^ . \__________////    \   \  \__________
+            __   .     .     .     ~            ~    .
+   .       //\\                    .        __   .     ~
+"""
+
+dark_witch_2 = r"""
+                                      __,,,
+                                 _.--'    /
+                              .-'        /
+                            .'          |
+                          .'           /
+                         /_____________|
+                       /`~~~~~~~~~~~~~~/
+                     /`               /
+      ____,....----'/_________________|---....,___
+,--""`             `~~~~~~~~~~~~~~~~~~`           `""--,
+`'----------------.----,------------------------,-------'`
+               _,'.--. \                         \
+             .'  (o   ) \                        |
+            c   , '--'  |                        /
+           /    )'-.    \                       /
+          |  .-;        \                       |
+          \_/  |___,'    |                    .-'
+         .---.___|_      |                   /
+        (          `     |               .--'
+         '.         __,-'\             .'
+           `'-----'`      \        __.'
+                            `-..--'`
+"""
+
+dark_witch_3 = r"""
+                        %%%%%%%%%
+                       %%%%%%%%%%%
+                       %%%%%%%%%%%       *
+           *           %%%%%%%%%%%
+                     xxxxxxxx%%%%%
+                   xxXXXXXXXxxx%%%                ^^         *
+                 xxXx/////xxXxxx%%           /\__{^^}__/\
+         xxxxxxxxxXxx////(/xxXxxx%          / _        _ \
+           XXXXXXXxx//(/(((/xxxXxx          \/ \/\ww/\/ \/
+ *            xxxx////(/(/(/)\\xXxx
+               ///////(/(/(/\)\\xxxx
+               /((/(//(/(/((\/\)xXxxx
+               //(/(/(//(/  \ \)\xxxxx
+               //((//(/( /    \ \\\xxxx         *
+            *   (((///(\   \ /  )\)\xXxx
+               /(//((/(\  @ /@  )\\)\xxxx
+              //(/(///(\::/ \:::)\\))\xxxx
+             /(/(/(///(\:(   ):/)\\)\)\xXxx
+            /((/(/(/(/(\  \ /  /)\\)\\)\xxxxx
+              //(/(/(/(\\ \__/ /)\\\)\)\\ xxx
+           /////(/(/(/(\\\    //)))\)\\)                   *
+              /((/(/(/(/(\\\_///)))\)\\\\)
+               ///(/(/(/(\)) ((/)\)\)\\)\\\
+   *          ///((/(/(/(/)) ((/)\)\))\\)))\
+                (///(/(/(//) ((/\\)\)))\\
+                 ///(/(/(//      \)\\\))\        Abbey Birk
+"""
+
+dark_witch_4 = r"""
+                     .
+
+                        .
+              /^\     .
+         /\   "V"
+        /__\   I      O  o
+       //..\\  I     .
+       \].`[/  I
+       /l\/j\  (]    .  O
+      /. ~~ ,\/I          .
+      \\L__j^\/I       o
+       \/--v}  I     o   .
+       |    |  I   _________
+       |    |  I c(`       ')o
+       |    l  I   \.     ,/
+     _/j  L l\_!  _//^---^\\_    -Row
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+"""
+
+harpie = r"""
+         ,                                      ,
+        |\                                      /|
+     ,   \'._ ,                           ,  _.'/   ,
+     |\  {'. '-`\,      ,-._**_.-,      ,/`-' .'}  /|
+      \`'-'-.  '.`\      \*____*/      /`.'  .-'-'`/
+    ,'-'-._  '.  ) )     /`    `\     ( (  .'  _.-'-',
+    |\'- _ '.   , /     /  /""\  \     \ ,  .'  _ -'/|
+     \'-.   .  ; (      \_|^  ^|_/      ) ;   .  .-'/
+      `'--, . ;  {`-.      \__/      .-'}  ; . ,--'`
+      '--`_. ;  { ^  \    _|  |_    /  ^ }  ; ._`--'
+      `,_.--  ;  { ^  `-'`      `'-`  ^ }  ;  --._,`
+        ,_.-    ; {^    /        \    ^} ;    -._,
+         ,_.-`), /\{^,/\\_'_/\_'_//\,^}/\ ,(`-._,
+           _.'.-` /.'   \        /   `.\ `-.'._
+          `  _.' `       \      /       ` '._   `
+                        .-'.  .'-.
+                      .'    `` ^  '.
+                     /  ^ ^   ^  ^  \
+                     | ^    ^   ^   |
+                    /^   ^/    \  ^  \
+                    \,_^_/    ^ \_,^./
+                     /=/  \^   /  \=\
+                 __ /=/_   | ^|   _\=\ __
+               <(=,'=(==,) |  | (,==)=',=)>
+                 /_/|_\    /  \    /_|\_\
+                 `V (=|  .'    '.  |=) V`
+                     V  / _/  \_ \  V
+                jgs    `"` \  / `"`
+                            \(
+"""
+harpie_tiger = r"""
+                         __,,,,_
+          _ __..-;''`--/'/ /.',-`-.
+      (`/' ` |  \ \ \\ / / / / .-'/`,_
+     /'`\ \   |  \ | \| // // / -.,/_,'-,
+    /<7' ;  \ \  | ; ||/ /| | \/    |`-/,/-.,_,/')
+   /  _.-, `,-\,__|  _-| / \ \/|_/  |    '-/.;.\'
+   `-`  f/ ;      / __/ \__ `/ |__/ |
+        `-'      |  -| =|\_  \  |-' |
+              __/   /_..-' `  ),'  //
+          fL ((__.-'((___..-'' \__.'
+"""
+harpie_tiger_2 = r"""
+   _
+  ( \                ..-----..__
+   \.'.        _.--'`  [   '  ' ```'-._
+    `. `'-..-'' `    '  ' '   .  ;   ; `-'''-.,__/|/_
+      `'-.;..-''`|'  `.  '.    ;     '  `    '   `'  `,
+                 \ '   .    ' .     '   ;   .`   . ' 7 \
+                  '.' . '- . \    .`   .`  .   .\     `Y
+                    '-.' .   ].  '   ,    '    /'`""';:'
+                      /Y   '.] '-._ /    ' _.-'
+                      \'\_   ; (`'.'.'  ."/
+                       ' )` /  `.'   .-'.'
+                        '\  \).'  .-'--"
+                          `. `,_'`
+                            `.__)  AsH/sk
+"""
+
+creature_fight = r"""
+           ,   ,
+         ,-`{-`/
+      ,-~ , \ {-~~-,
+    ,~  ,   ,`,-~~-,`,
+  ,`   ,   { {      } }                                             }/
+ ;     ,--/`\ \    / /                                     }/      /,/
+;  ,-./      \ \  { {  (                                  /,;    ,/ ,/
+; /   `       } } `, `-`-.___                            / `,  ,/  `,/
+ \|         ,`,`    `~.___,---}                         / ,`,,/  ,`,;
+  `        { {                                     __  /  ,`/   ,`,;
+        /   \ \                                 _,`, `{  `,{   `,`;`
+       {     } }       /~\         .-:::-.     (--,   ;\ `,}  `,`;
+       \\._./ /      /` , \      ,:::::::::,     `~;   \},/  `,`;     ,-=-
+        `-..-`      /. `  .\_   ;:::::::::::;  __,{     `/  `,`;     {
+                   / , ~ . ^ `~`\:::::::::::<<~>-,,`,    `-,  ``,_    }
+                /~~ . `  . ~  , .`~~\:::::::;    _-~  ;__,        `,-`
+       /`\    /~,  . ~ , '  `  ,  .` \::::;`   <<<~```   ``-,,__   ;
+      /` .`\ /` .  ^  ,  ~  ,  . ` . ~\~                       \\, `,__
+     / ` , ,`\.  ` ~  ,  ^ ,  `  ~ . . ``~~~`,                   `-`--, \
+    / , ~ . ~ \ , ` .  ^  `  , . ^   .   , ` .`-,___,---,__            ``
+  /` ` . ~ . ` `\ `  ~  ,  .  ,  `  ,  . ~  ^  ,  .  ~  , .`~---,___
+/` . `  ,  . ~ , \  `  ~  ,  .  ^  ,  ~  .  `  ,  ~  .  ^  ,  ~  .  `-,
+"""
+
+shield = r"""
+   |\                     /)
+ /\_\\__               (_//
+|   `>\-`     _._       //`)
+ \ /` \\  _.-`:::`-._  //
+  `    \|`    :::    `|/
+        |     :::     |
+        |.....:::.....|
+        |:::::::::::::|
+        |     :::     |
+        \     :::     /
+         \    :::    /
+          `-. ::: .-'
+   jgs     //`:::`\\
+          //   '   \\
+         |/         \\
+"""
+
+little_shield = r"""
+  |`-._/\_.-`|
+  |    ||    |
+  |___o()o___|
+  |__((<>))__|
+  \   o\/o   /
+   \   ||   /
+    \  ||  /
+jgs  '.||.'
+"""
+
+little_shield_2 = r"""
+    _..._
+.-'_.---._'-.
+||####|(__)||
+((####|(**)))
+ '\###|_''/'
+  \\()|##//
+   \\ |#//
+    .\_/.
+     L.J
+      "
+"""
+
+villian_weapon = r"""
+        |\
+        | \        /|
+        |  \____  / |
+       /|__/AMMA\/  |
+     /AMMMMMMMMMMM\_|
+ ___/AMMMMMMMMMMMMMMA
+ \   |MVKMMM/ .\MMMMM\
+  \__/MMMMMM\  /MMMMMM---
+  |MMMMMMMMMMMMMMMMMM|  /
+  |MMMM/. \MM.--MMMMMM\/
+  /\MMM\  /MM\  |MMMMMM   ___
+ /  |MMMMMMMMM\ |MMMMMM--/   \-.
+/___/MMMMMMMMMM\|M.--M/___/_|   \
+     \VMM/\MMMMMMM\  |      /\ \/
+      \V/  \MMMMMMM\ |     /_  /
+        |  /MMMV'   \|    |/ _/
+        | /              _/  /
+        |/              /| \'
+"""
+
+mage = r"""
+              _,._
+  .||,       /_ _\\
+ \.`',/      |'L'| |
+ = ,. =      | -,| L
+ / || \    ,-'\"/,'`.
+   ||     ,'   `,,. `.
+   ,|____,' , ,;' \| |
+  (3|\    _/|/'   _| |
+   ||/,-''  | >-'' _,\\
+   ||'      ==\ ,-'  ,'
+   ||       |  V \ ,|
+   ||       |    |` |
+   ||       |    |   \
+   ||       |    \    \
+   ||       |     |    \
+   ||       |      \_,-'
+   ||       |___,,--")_\
+   ||         |_|   ccc/
+   ||        ccc/
+   """
+
+random_challenger = r"""
+                  (\    /)
+                  |_)//(_|
+                  |4\_/4)(
+                 '( (_  -)D
+                   ) _)  /\,__
+                 _,\_._,/ /   `)
+    \.,_,,      ( _   ~ .   ,   \
+     \   (\      \(   \/  _)(    )
+      \   \\      )). _______>-. `*
+       \  /\\    _'( /   /\  '\  _)
+        \( ,\\.-'  '/    \/    \/
+         '  \><)_'.)|/\/\/\/\/\|
+              \) ,( |\/\/\/\/\/|
+              ' ((  \    /\    /
+               ((((  \___\/___/)
+                ((,) /   ((()   )
+                 "..-,  (()("   /
+      pils/b'ger  _//.   ((() ."
+          _____ //,/" ___ ((( ', ___
+                           ((  )
+                            / /
+                          _/,/'
+"""
+random_challenger_2 = r"""
+             ,      ,
+            /(.-""-.)\
+        |\  \/      \/  /|
+        | \ / =.  .= \ / |
+        \( \   o\/o   / )/
+         \_, '-/  \-' ,_/
+           /   \__/   \
+           \ \__/\__/ /
+         ___\ \|--|/ /___
+       /`    \      /    `\
+"""
+
+random_challenger_3 = r"""
+                ==\\
+                     || \\
+                  ________\
+                 |________|\
+                 | .\  /. | \
+                {|   ^^   |}
+                  \ /||\ /
+                   \|__|/
+              =____||  ||____=
+     \\/\    /                \    /\//
+    \\/  \  /           .      \  /  \//
+     /    \/                    \/    \
+      \            .                 /
+       \                            /
+        \_                        _/
+"""
+random_challenger_4 = r"""
+                        _.-.
+                       ._.-.\
+                     _.-'=. \\
+                 .-._.-=-..' \'.
+               _.--._-='.'   |  `.
+              _`.-.`=-./'.-. / .-.\
+              _.-=-=-/ | '._)`(_.'|
+              _.--=.'  `. (.-v-.)/
+              _.-.' \-.' `-..-..'
+             .-.'      `.'  " ".
+            /   )        \  /   \
+           /   /\                \
+         .'  .'\ `.        .'     \
+        /   /   \  `-    -' .`.    .
+      .''\.'    | `.      .'   `.   \
+     /   |      |      .'/       `.- `.
+    |   /       / `.    |         \   |
+    |  /       |       .'.         `. |
+    / /       /           \          \ \
+"""
+
+random_challenger_5 = r"""
+           ____                      ,
+          /---.'.__             ____//
+               '--.\           /.---'
+          _______  \\         //
+        /.------.\  \|      .'/  ______
+       //  ___  \ \ ||/|\  //  _/_----.\__
+      |/  /.-.\  \ \:|< >|// _/.'..\   '--'
+         //   \'. | \'.|.'/ /_/ /  \\
+        //     \ \_\/" ' ~\-'.-'    \\
+       //       '-._| :H: |'-.__     \\
+      //           (/'==='\)'-._\     ||
+      ||                        \\    \|
+      ||                         \\    '
+"""
+
+
+dont_know_what_this_is_but_i_like_it = r"""
+                              '             .           .
+                           o       '   o  .     '   . O
+                        '   .   ' .   _____  '    .      .
+                         .     .   .mMMMMMMMm.  '  o  '   .
+                       '   .     .MMXXXXXXXXXMM.    .   '
+                      .       . /XX77:::::::77XX\ .   .   .
+                         o  .  ;X7:::''''''':::7X;   .  '
+                        '    . |::'.:'        '::| .   .  .
+                           .   ;:.:.            :;. o   .
+                        '     . \'.:            /.    '   .
+                           .     `.':.        .'.  '    .
+                         '   . '  .`-._____.-'   .  . '  .
+                          ' o   '  .   O   .   '  o    '
+                           . ' .  ' . '  ' O   . '  '   '
+                            . .   '    '  .  '   . '  '
+                             . .'..' . ' ' . . '.  . '
+                              `.':.'        ':'.'.'
+                                `\\_  |     _//'
+                                  \(  |\    )/
+                                  //\ |_\  /\\
+                                 (/ /\(" )/\ \)
+                                  \/\ (  ) /\/
+                                     |(  )|
+                                     | \( \
+                                     |  )  \
+                                     |      \
+                                     |       \
+                                     |        `.__,
+                                     \_________.-'Ojo/gnv
+"""
+blood_scythe = r"""
+                         __..--"".          .""--..__
+                   _..-``       ][\        /[]       ``-.._
+               _.-`           __/\ \      / /\__           `-._
+            .-`     __..---```    \ \    / /    ```---..__     `-.
+          .`  _.--``               \ \  / /               ``--._  `.
+         / .-`                      \ \/ /                      `-. \
+        /.`                          \/ /                          `.\
+       |`                            / /\                            `|
+"""
+
+magic_wand = r"""
+             *
+       *   *
+     *    \* / *
+       * --.:. *
+      *   * :\ -
+        .*  | \
+       * *     \
+     .  *       \
+      ..        /\.
+     *          |\)|
+   .   *         \ |
+  . . *           |/\
+     .* *         /  \
+   *              \ / \
+ *  .  *           \   \
+    * .
+   *    *
+  .   *    *
+"""
+
+small_sword = r"""
+      /| ________________
+O|===|* >________________>
+      \|
+
+"""
+swords_battle = r"""
+           /\                                                 /\
+ _         )( ______________________   ______________________ )(         _
+(_)///////(**)______________________> <______________________(**)\\\\\\\(_)
+           )(                                                 )(
+           \/                                                 \/
+
+"""
+
+general_weapon = r"""
+ ____________________
+/                    \
+!                    !
+!                    !
+\____________________/
+         !  !
+         !  !
+         L_ !
+        / _)!
+       / /__L
+ _____/ (____)
+        (____)
+ _____  (____)
+      \_(____)
+         !  !
+         !  !
+         \__/
+"""
+magic = r"""
+          ,/
+       ,'/
+     ,' /
+   ,'  /_____,
+ .'____    ,'
+      /  ,'
+     / ,'
+    /,'
+   /'
+"""
+
+whirl_wind = r"""
+   ((  "####@@!!$$    ))
+       `#####@@!$$`  ))
+    ((  '####@!!$:
+   ((  ,####@!!$:   ))
+       .###@!!$:
+       `##@@!$:
+        `#@!!$
+  !@#    `#@!$:       @#$
+   #$     `#@!$:       !@!
+            '@!$:
+        '`\   "!$: /`'
+           '\  '!: /'
+             "\ : /"
+  -."-/\\\-."//.-"/:`\."-.JrS"."-=_\\
+" -."-.\\"-."//.-".`-."_\\-.".-\".-//
+"""
+snack = r"""
+       ---_ ......._-_--.
+      (|\ /      / /| \  \
+      /  /     .'  -=-'   `.
+     /  /    .'             )
+   _/  /   .'        _.)   /
+  / o   o        _.-' /  .'
+  \          _.-'    / .'*|
+   \______.-'//    .'.' \*|
+    \|  \ | //   .'.' _ |*|
+     `   \|//  .'.'_ _ _|*|
+      .  .// .'.' | _ _ \*|
+      \`-|\_/ /    \ _ _ \*\
+       `/'\__/      \ _ _ \*\
+      /^|            \ _ _ \*
+     '  `             \ _ _ \      ASH (+VK)
+                       \_
+"""
+explode = r"""
+                  ,--.!,
+               __/   -*-
+             ,d08b.  '|`
+             0088MM
+             `9MMP'
+"""
+
+elf = r"""
+             ..-.--..
+           ,','.-`.-.`.
+          :.',;'     `.\.
+          ||//----,-.--\|
+        \`:|/-----`-'--||'/
+         \\|:    |:'
+          `||      \   |!
+          |!|          ;|
+          !||:.   --  /|!
+         /||!||:.___.|!||\
+        /|!|||!|    |!||!\\:.
+     ,'//!||!||!`._.||!||,:\\\
+    : :: |!|||!| SSt|!||! |!::
+    | |! !||!|||`---!|!|| ||!|
+    | || |!|||!|    |!||! |!||
+"""
+attack = r"""
+                           A
+               ,==.       /\\
+   ,-. ,-.    /( `|\     /  \\
+  (   `-. `. /,+./,,).../___ ))
+   \     `-.:.( \)----,A=====|E)->
+    \        / \ \  ,'_3     ||
+     )      / ,'\/.','  \    ))
+    /     ,' /   `.'     \  //
+   (   ,-/  (             \//
+    `-' /    \             V
+       '/^;^:^\
+  ._.._/ /   \ \
+ / _____/    / /
+(,'         / /
+           ( (
+"""
+duel = r"""
+      (,                                                         ,)
+      /|__--__                                              __--_|\
+      |\' _                                                   _ `/|
+      .' / `.,_ _________                       _________ _,.' \ `.
+     /  ||``._.'                                         `._.''||  \
+   .'   /|                                                     |\   `.
+ .'    /\ \                                                   / /\    `.
+  ` `,/ / ,\                                                 /, \ \,' '
+    .'.'  /|                                                 |\  `.`.
+  .' /   / |                                                 | \   \ `,
+"""
+
+warrior = r"""
+                         |  ||
+                         |  ||         __.--._
+                         |  ||      /~~   __.-~\ _
+                         |  ||  _.-~ / _---._ ~-\/~\
+                         |  || // /  /~/  .-  \  /~-\
+                         |  ||((( /(/_(.-(-~~~~~-)_/ |
+                         |  || ) (( |_.----~~~~~-._\ /
+                         |  ||    ) |              \_|
+                         |  ||     (| =-_   _.-=-  |~)        ,
+                         |  ||      | `~~ |   ~~'  |/~-._-'/'/_,
+                         |  ||       \    |        /~-.__---~ , ,
+                         |  ||       |   ~-''     || `\_~~~----~
+                         |  ||_.ssSS$$\ -====-   / )\_  ~~--~
+                 ___.----|~~~|%$$$$$$/ \_    _.-~ /' )$s._
+        __---~-~~        |   |%%$$$$/ /  ~~~~   /'  /$$$$$$$s__
+      /~       ~\    ============$$/ /        /'  /$$$$$$$$$$$SS-.
+    /'      ./\\\\\\_( ~---._(_))$/ /       /'  /$$$$%$$$$$~      \
+    (      //////////(~-(..___)/$/ /      /'  /$$%$$%$$$$'         \
+"""
+big_boss = r"""
+               \.   \.      __,-"-.__      ./   ./
+           \.   \`.  \`.-'"" _,="=._ ""`-.'/  .'/   ./
+            \`.  \_`-''      _,="=._      ``-'_/  .'/
+             \ `-',-._   _.  _,="=._  ,_   _.-,`-' /
+          \. /`,-',-._"" \ _,="=._ /  ""_.-,`-,'\ ./
+           \`-'  /    `-._  "       "  _.-'    \  `-'/
+           /   (         \    ,-.    /         )     \
+        ,-'"     `-.       \  /   \  /       .-'     "`-,
+      ,'_._         `-.____/ /  _  \ \____.-'         _._`,
+     /,'   `.                \_/ \_/                .'   `,\
+    /'       )                  _            Krogg (       `\
+            /   _,-'"`-.  ,++|T|||T|++.  .-'"`-,_   \
+           / ,-'        \/|`|`|`|'|'|'|\/        `-, \
+          /,'             | | | | | | |             `,\
+         /'               ` | | | | | '               `\
+                            ` | | | '
+"""
+
+illuminati_alien = r"""
+.     .       .  .   . .   .   . .    +  .
+  .     .  :     .    .. :. .___---------___.
+       .  .   .    .  :.:. _".^ .^ ^.  '.. :"-_. .
+    .  :       .  .  .:../:            . .^  :.:\.
+        .   . :: +. :.:/: .   .    .        . . .:\
+ .  :    .     . _ :::/:               .  ^ .  . .:\
+  .. . .   . - : :.:./.                        .  .:\
+  .      .     . :..|:                    .  .  ^. .:|
+    .       . : : ..||        .                . . !:|
+  .     . . . ::. ::\(                           . :)/
+ .   .     : . : .:.|. ######              .#######::|
+  :.. .  :-  : .:  ::|.#######           ..########:|
+ .  .  .  ..  .  .. :\ ########          :######## :/
+  .        .+ :: : -.:\ ########       . ########.:/
+    .  .+   . . . . :.:\. #######       #######..:/
+      :: . . . . ::.:..:.\           .   .   ..:/
+   .   .   .  .. :  -::::.\.       | |     . .:/
+      .  :  .  .  .-:.":.::.\             ..:/
+ .      -.   . . . .: .:::.:.\.           .:/
+.   .   .  :      : ....::_:..:\   ___.  :/
+   .   .  .   .:. .. .  .: :.:.:\       :/
+     +   .   .   : . ::. :.:. .:.|\  .:/|
+     .         +   .  .  ...:: ..|  --.:|
+.      . . .   .  .  . ... :..:.."(  ..)"
+ .   .       .      :  .   .: ::/  .  .::\
+"""
+sun = r"""
+                       .    |     .
+                        \   |    /
+                    `.   \  '   /   .'
+                   `. .-*""*-. .'
+               "*-._ /.*"  "*.\ _.-*"
+                    : <o>  <o> ; ____
+                  ""':    ..    ;
+               _.-*" \ `.__.' / "*-._
+                   .' `-.__.-' `.
+                .'   /   .  \   `.
+                        /    \
+
+"""
+
+space_ship = r"""
+                    oooooOOOOOOOOOOOOOOOOooooo
+                  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+                HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+               zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+    .<><><><><><><><><><><><><><><><><><><><><><><><><><><><>.
+  /XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\
+/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\
+\XXX[  ]XXX[  ]XXXX[  ]XXXX[  ]XXXX[  ]XXXX[  ]XXXX[  ]XXX[  ]XXX/
+  \XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/
+      ~~~~\XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/~~~~
+               /   ~~~<><><><><><><><><><>~~~   \
+              /      /       |   |          \      \
+             /     /               |          \     \
+            /    /           |                  \    \
+           /   /               |   |              \   \
+          /  /               |                      \  \
+        _/_/                     | |                  \_\_
+       <___>                 |    |                   <___>
+"""
+
+
+illuminati = r"""
+                                          `-.`'.-'
+                                       `-.        .-'.
+                                    `-.    -./\.-    .-'
+                                        -.  /_|\  .-
+                                    `-.   `/____\'   .-'.
+                                 `-.    -./.-""-.\.-      '
+                                    `-.  /< (()) >\  .-'
+                                  -   .`/__`-..-'__\'   .-
+                                ,...`-./___|____|___\.-'.,.
+                                   ,-'   ,` . . ',   `-,
+                                ,-'   ________________  `-,
+                                   ,'/____|_____|_____\
+                                  / /__|_____|_____|___\
+                                 / /|_____|_____|_____|_\
+                                ' /____|_____|_____|_____\
+                              .' /__|_____|_____|_____|___\
+                             ,' /|_____|_____|_____|_____|_\
+,,---''--...___...--'''--.. /../____|_____|_____|_____|_____\ ..--```--...___...--``---,,
+                           '../__|_____|_____|_____|_____|___\
+      \    )              '.:/|_____|_____|_____|_____|_____|_\               (    /
+      )\  / )           ,':./____|_____|_____|_____|_____|_____\             ( \  /(
+     / / ( (           /:../__|_____|_____|_____|_____|_____|___\             ) ) \ \
+    | |   \ \         /.../|_____|_____|_____|_____|_____|_____|_\           / /   | |
+ .-.\ \    \ \       '..:/____|_____|_____|_____|_____|_____|_____\         / /    / /.-.
+(=  )\ `._.' |       \:./ _  _ ___  ____ ____ _    _ _ _ _ _  _ ___\        | `._.' /(  =)
+ \ (_)       )       \./  |\/| |__) |___ |___ |___ _X_ _X_  \/  _|_ \       (       (_) /
 """
