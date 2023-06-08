@@ -50,6 +50,8 @@ import random
 # battle(player, enemy)
 
 # session.close()
+from questions import current_player
+from art import (ability_whirlwing, snack, ability_starburst, ability_expelliarmus)
 
 class Player:
     def __init__(self, name, hp):
@@ -68,25 +70,46 @@ class Attack:
         self.name = name
         self.damage = damage
 
+player = current_player
 def battle(player, enemy):
     print(f"Player: {player.name} VS Enemy: {enemy.name}")
     print("Battle begins!")
 
     while player.hp > 0 and enemy.hp > 0:
         print(f"\n{player.name}'s turn:")
-        print("1. Primary Attack")
-        print("2. Secondary Attack")
+        print(f"1. {current_player.primary_attack}")
+        print(f"2. {current_player.secondary_attack}")
         choice = input("Select an attack: ")
 
         if choice == "1":
-            attack = Attack("Starburst Stream", 25)
+            if player.className == "Warrior":
+                attack = Attack("Whirlwind Strike", 25)
+                print(f'{ability_whirlwing}')
+                print(f"{player.name} attacks with {player.primary_attack}!")
+            elif player.className == "Mage":
+                attack = Attack("Serpentine Slash", 25)
+                print(f'{snack}')
+                print(f"{player.name} attacks with {player.primary_attack}!")
+            elif player.className == "Slayer":
+                attack = Attack("Shizuka", 25)
+                print(f"{player.name} attacks with {player.primary_attack}!")
         elif choice == "2":
-            attack = Attack("Starburst Stream", 15)
+            if player.className == "Warrior":
+                attack = Attack("Headstrong", 25)
+                print(f'{ability_whirlwing}')
+                print(f"{player.name} attacks with {player.secondary_attack}!")
+            elif player.className == "Mage":
+                attack = Attack("Expelliarmus", 25)
+                print(f'{ability_expelliarmus}')
+                print(f"{player.name} attacks with {player.secondary_attack}!")
+            elif player.className == "Slayer":
+                attack = Attack("Starburst Stream", 25)
+                print(f'{ability_starburst}')
+                print(f"{player.name} attacks with {player.secondary_attack}!")
         else:
             print("Invalid choice. Try again.")
             continue
-
-        print(f"{player.name} attacks with Starburst Stream!")
+        
         enemy.hp -= attack.damage
         print(f"{enemy.name} takes {attack.damage} damage. Enemy HP: {enemy.hp}")
 
@@ -107,6 +130,6 @@ def battle(player, enemy):
     print("Battle ends!")
     import postbattle
 
-player = Player("Slayer", 100)
+
 enemy = Enemy("Blood Magic Queen", 150, Attack("Fireball", 10), Attack("Lightning Strike", 15))
 battle(player, enemy)
