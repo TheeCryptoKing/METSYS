@@ -155,3 +155,4 @@ from questions import current_player
 player = current_player
 enemy = Enemy("Blood Magic Queen", 150, Attack("Fireball", 10), Attack("Lightning Strike", 15), Attack("MoonBlast", 20))
 battle(player, enemy)
+# test
