@@ -33,24 +33,20 @@ Type Into the Terminal:
 ###AFTER INSTALLING ALL FILES####<br>
 If game.db not loading data Follow these steps:<br>
 
-delete:<br>
-ALL FILES INSIDE migrations, <br>
-ALL pycache, <br>
-and ALL DBS(INSIDE AND OUTSIDE LIB)<br>
-
-<h4>In Terminal:</h4>
-open METSYS<br>
-</p>
+1. go to  files inside of explorer and open METSYS and open lib, finally open up migrations, <br>
+2. DELETE ALL pycache, <br>
+3. DELETE ALL DBS(INSIDE AND OUTSIDE LIB)<br>
+4. go to terminal cd inside METSYS 
 
 <h4>inside METSYS folder/Repo Run Commands in order:</h4>
 <!-- 1.pip uninstall prompt toolkit <br>
 2.pip install prompt_toolkit==1.0.14<br> -->
+1.alembic upgrade head<br>
+2.alembic revision --autogenerate -m "Repairing Db"<br>
 3.alembic upgrade head<br>
-4.alembic revision --autogenerate -m "Repairing Db"<br>
-5.cd inside lib<br>
-5.alembic upgrade head<br>
-6.$python lib/Connect.py<br>
-7.$python play.py
+4.cd inside lib<br>
+5.$python Connect.py<br>
+6.$python play.py
 Should be All Good :)
 </p>
 
