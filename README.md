@@ -41,13 +41,13 @@ If game.db not loading data Follow these steps:<br>
 <h4>inside METSYS folder/Repo Run Commands in order:</h4>
 <!-- 1.pip uninstall prompt toolkit <br>
 2.pip install prompt_toolkit==1.0.14<br> -->
-1.alembic upgrade head<br>
-2.alembic revision --autogenerate -m "Repairing Db"<br>
-3.alembic upgrade head<br>
-4.cd inside lib<br>
-5.$python Connect.py<br>
-6.$python play.py
-Should be All Good :)
+1. alembic upgrade head<br>
+2. alembic revision --autogenerate -m "Repairing Db"<br>
+3. alembic upgrade head<br>
+4. cd inside lib<br>
+5. $python Connect.py<br>
+6. $python play.py
+   Should be All Good :)
 </p>
 
 ## $${\color{green} Enjoy The Experience! }$$
