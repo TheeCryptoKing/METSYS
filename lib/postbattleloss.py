@@ -17,7 +17,7 @@ post_battle_loss = [
     {
     'type': 'input',
     'name': 'return',
-    'message': f"\n{gnome}\nYOU'VE BEEN GNOMED\nReturn to the System..."
+    'message': f"\n{gnome}\nYOU'VE BEEN GNOMED\nReturn to the world of Metsys and..."
     }
 ]
 

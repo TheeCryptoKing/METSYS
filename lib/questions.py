@@ -1,4 +1,5 @@
 from PyInquirer import prompt, style_from_dict, Token
+import sys
 from art import (
                 guild_art,
                 slayer_weapon,
@@ -24,17 +25,11 @@ Session = sessionmaker(bind=engine)
 session = Session()
 
 # MVP
-# Tuple needed, ReadMe needed 
-# Store db entries in a tuple
 # Generates a Pygments style fo reach cn use colors, backgrounds, etc 
-# Token class provided, used to define and style different elements in rendered prompts like above
 # ListPrompt # ChcekBoxPrompt # RawlistPrompt # ExpandPrompt #
 
-# Still cant get strings to load for me 
-selectedClass = None
-selectedWeapon = None
-selectedEnemy = None
 
+######################################## CUSTOM STYLING FOR TEXT ########################
 custom_styles = style_from_dict(
     {
         Token.Separator: "#6C6C6C",
@@ -46,15 +41,9 @@ custom_styles = style_from_dict(
         Token.Question: "#005F00",
     }
 )
+
+# Spacing function #
 new_page = ('\n' * 1)
-
-
-
-
-
-# ((Player.name),(Player.hp),(Player.Strength),(Player.Speed),(Player.intellect), (Player)).all()
-
-
 
 # for player in players:
 #     name = player.name
@@ -64,6 +53,7 @@ new_page = ('\n' * 1)
 #     Intellect = player.intellect
 #     Xp = player.xp
 
+########################## PROMPTS ############################
 name_question = [
     {
         'type': 'input',
@@ -71,8 +61,13 @@ name_question = [
         'message': f"{new_page}{hello_traveler} \nHello there young traveler! \nI see you are a little lost in these vast woods. \nFear not, I am Greem, the greatest guide this city has to offer. \nWhat is your name?",
     },
 ]
+
+# STORE & STYLE DATA IN name_answer from name_question # 
 name_answer = prompt(name_question, style=custom_styles)
+
+# Define Name for Current Player #
 new_name = name_answer['name']
+
 introduction_questions = [
     {
         'type': 'input',
@@ -80,7 +75,11 @@ introduction_questions = [
         'message': f"{new_page}{new_name}, you look quite strong I must say, would you care to follow me to the guild?\nPress enter to follow Greem..."
     },
 ]
+
+# STORE & STYLE DATA IN introduction_questions for introduction_answer #
 introduction_answer = prompt(introduction_questions, style=custom_styles)
+
+
 guild_questions = [
     {
         'type': 'input',
@@ -103,7 +102,7 @@ guild_questions = [
         'name': 'weapon',
         'message': f"{new_page}You selected the Slayer Class: {slayer_weapon} \nA wise choice indeed. These lands are crawling with dangerous monsters and I would hope to see you again. \nPlease choose a weapon from our Slayer selection.",
         'when': lambda answers: answers['class'] == 'Slayer',
-        'choices': ['Enma', 'Zangetsu', 'Demon Dwellers']
+        'choices': ['Enma', 'Zangetsu', 'Blade Of Chaos']
     },
     {
         'type': 'list',
@@ -117,13 +116,24 @@ guild_questions = [
         'name': 'weapon',
         'message': f"{new_page}You selected the Mage Class: {mage_weapon} \nA wise choice indeed. These lands are crawling with dangerous monsters and I would hope to see you again. \nPlease choose a weapon from our Mage selection.",
         'when': lambda answers: answers['class'] == 'Mage',
-        'choices': ['Wizard Staff', 'The Elder Wand', 'Energy Sword']
+        'choices': ['Yoru', 'Lostvayne', 'Energy Sword']
     }
 ]
+
+# ???Special Attributes???? maybe some better for demons
+# Dual Swords ideas: Sekki:Norigami, Demon Dwellers:Magi, Dual Katanas:Ninja Gaiden, Elucidator/Dark Repulsor: SAO, LevisBlades:AttackOnTitan
+# Giant Sword ideas: Tessaiga:InuYasha, Ea:Fatezero, Ragnarok:Soul Eater (doubles as companion), 
+# Mage Sword ideas: kurikara:Blue Exorcist, Zangetsu: Ichigo single Bankai , RyuJin Jakka:Yamamoto,  Moonlight:EldenRing, SwordofNightAndFlame:EldenRing, BlasphemousBlade:EldenRing
+
+
+# STORE & STYLE DATA guild_questions in guild_answers
 guild_answers = prompt(guild_questions, style=custom_styles)
+# Store user's choice for Class #
 class_choice = guild_answers['class']
+# Store user's choice for weapon
 new_weapon = guild_answers['weapon']
 
+####################################### CurrentPlayer Defined ############################################
 # base_data = session.scalars(select(Player).where(Player.className.like(class_choice))).first()
 base_data = session.scalars(select(Player).where(Player.className.contains(class_choice))).first()
 # base_data = session.scalars(select(Player).where(Player.className.in_([class_choice])))
@@ -148,6 +158,7 @@ def define_current_player():
     session.add(player)
     session.commit()
     return player
+# Current Player Defined 
 current_player = define_current_player()
 
 goodbye_questions = [
@@ -167,8 +178,9 @@ goodbye_questions = [
         'message': f"{new_page}{forest_gate}\nWow these gates are majestic! The Magic Forest must be beyond here.\nPress enter to venture into the Magic Forest..."
     }
 ]
-goodbye_answers = prompt(goodbye_questions, style=custom_styles)
 
+# STORE & STYLE DATA FROM goodbye_questions in goodbye_answers  
+goodbye_answers = prompt(goodbye_questions, style=custom_styles)
 
 pathway_questions = [
     {
@@ -188,10 +200,8 @@ pathway_questions = [
     }
 ]
 
+# STORE & STYLE DATA FROM pathway_questions in pathway_answers
 pathway_answers = prompt(pathway_questions, style=custom_styles)
-
-
-
 
 pre_battle_blood_fairy = [
     {
@@ -210,6 +220,7 @@ pre_battle_dark_witch = [
     }
 ]
 
+# STORE & STYLE DATA FROM pre_battle_blood_fairy in pre_battle_blood_fai....
 pre_battle_blood_fairy_answers = prompt(pre_battle_blood_fairy, style=custom_styles)
 
 hype_for_battle_questions = [
@@ -220,12 +231,17 @@ hype_for_battle_questions = [
     }
 ]
 
+# STORE & STYLE DATA FROM hype_...questions in hype_....answers
 hype_for_battle_answers = prompt(hype_for_battle_questions, style=custom_styles)
 
+# Declare Opponents # 
 Opps_be_buggin = "Fairies"
 Opps_be_buggin = "Dark Witch"
+
+# import Opponents to Battle and Run Battle Sequence #
 import battle
 
+# Deletes current player i
 session.delete(current_player)
 session.close()
 
