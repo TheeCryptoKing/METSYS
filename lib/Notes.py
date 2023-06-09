@@ -95,6 +95,179 @@ pass
 # main menu available like pokemon
 # entire route based on chosen Quest from guild or hut after you pick world
 # End screen when win 
+
+# Save state, load screen, with delete and save functionality
+# delete character
+# delete at any time
+# quit at any time 
+# flee from a game before death but penality 
+
+# Need to incorpoprate a Update.py, Current_Player.py, Current_enemy.py, Final_Boss.py, OrcMountains.py, Batte.py, Demon_Dungeon.py, Menu.py
+# Update.py 
+# All update for stats and interchanging keys
+#################### Tables ##################
+# Characters
+# Enemies 
+# Quests
+# Shop 
+# Inventory 
+# Weapons 
+# Guild 
+# Battle 
+# Locations 
+# Armor 
+# Companions 
+# Enemeis 
+# Menu
+# Locations
+# ABilities 
+############################################# CHARACTERS 
+# All NPC's 
+# either we declare items in inventory or we grab id in inventories 
+# Constantly updating, Armor, Weapon, Charm, Coins, Xp, Hp, 
+
+##################################################### Update.py
+# Current Characters(All character Stats updated in dbs)
+# Update Current Player
+# Add stats, Armor, Companion attack, Charm Attack, Coins populate weapons with id or ForeignKey
+# All Stats 
+
+
+############################################# Enemys 
+# declare_OrcMountain_Enemy(All Enemies and Stats)
+# declare_DemonDungeon_Enemy(All Enemies inside and Stats)
+# Define Bossess Stats And Final Boss Stats 
+# define Coin_Drop 
+# define Weapon_Drop 
+# define Xp_drop
+
+############################################ Quests
+# 4 options, Quest 1, Quest 2, EXP , Pass Through (Each World)
+# Flee Option in Battle, but penializes you if you use For 2 Battles
+# CANNOT ENTER OTHER WORLDS WITH OUT A CERTAIN NUMBER OF SKULLS 
+# MAKE BOSSES HARD FOR THIS 
+
+########################################## Shop
+# Unsure if will use
+# Buy Potions of All Type 
+# Buy Armor 
+# Buy Weapons
+# Buy Companions
+# Spend Coins
+
+################################## Inventory
+# Hp potions, Intellect Potions, Charge up Potions, See Weapons And Armor(Use Rich)
+# CANNOT ENTER OTHER WORLDS WITH OUT A CERTAIN NUMBER OF SKULLS 
+# MAKE BOSSES HARD FOR THIS 
+
+##################################### Weapons 
+# populated with Stats and extra ability per Weapon
+# attack calculated on multiple stats: 
+# Warrior = (Strength intensified to 20 start, higher Hp) 
+# Slayer = (Speed + Strength calculates Attack)
+# Mage = (Intellect + Strength) 
+
+#################################### Guild
+# NPC's and lore building 
+# Brothel NPC's
+# Ability to grab Drink, get to drunk and go home
+# Chose Quests based on Worlds Acces to worlds open but need to collect all skulls
+# incorporate need to get all skulls in First Meeting with Guild Master
+# Meet Guild Master After entering Guild to buy or be gifted Potions , Armor, Weapons, Companions 
+# CANNOT ENTER OTHER WORLDS WITH OUT A CERTAIN NUMBER OF SKULLS 
+# MAKE BOSSES HARD FOR THIS 
+ 
+################################ Battle
+# Battle sequence defined for every battle getting enemy stats and current player stats
+
+############################# Charms 
+# Charms for powers granted, enemies will drop and have drop rate
+# Charms of powers , ??? idk 
+# Realistically want extra power from charms But will have a 3 move cooldown 
+# Super powerfull 
+# Kamemehamaha(DBZ) Charm 
+# Cero(Bleach) Charm 
+# Getsuga(Ichigo) Tenshou Charm 
+# Rasengan(Naruto) Charm 
+# Full Counter(Meliodas) Charm
+# Gomu Gomu no Dawn Whip(Luffy) Charm
+# Can FInd in Demon Dungeon and Boss Worlds (LORE) 
+
+########################## Locations
+# All Locations declared, Guild, Home, Practice Center, Orc Mountain, Demon Dungeon, FInal Boss World
+# CANNOT ENTER OTHER WORLDS WITH OUT A CERTAIN NUMBER OF SKULLS 
+# MAKE BOSSES HARD FOR THIS 
+
+############################ Armor
+# Unsure if will implement 
+# Armr defined off of Weapons and if full Set Add Boosted Stats ???
+# Armor pieces: GLoves, Legs, Helmet, Chest (Maybe Have them as Sets to make Easier Honestly) 
+
+##################### Companions 
+# Define Companions 
+# Dogs 
+# Wolfs 
+# Weapon Comapnions based on Anime lore(Soul Eater)
+
+###################### Enemies
+######## Demon Dungeon 
+#### Final Boss: One of Satan illegitamite children 
+# Hardest Boss 
+# Stats : TBD 
+# Will contain Final Skull
+# Then Open Portal To Final World After you Rest
+
+### Demons 
+# Some Weak, Some Strong(import Random)
+# All want to kill and Eat your Soul(Something different about you they all sense) 
+
+## Damned Souls(Skeletons)
+# Trapped in Demon Dungeon becuase they dies their 
+# Player Cannot Die there, if you die there you have to beat a version of yourself to re-enter
+# Hardest World  
+
+######## Orc Mountain 
+# Orc Lore, Raised to be Tough and Be biggest and Strongest but have feelings like the rest of use, ALot of Orc Scientists and Non-violent orc societies
+##### Orc Mad King
+# Came to be king by destroing, pillaging, Raping, and killing Everythin gin his path 
+# Has an army and Genrals you will have to fight
+
+#### Orc General 
+# Only General Mad King trusts 
+# Mini Boss Stats 
+# Encounter in Village after Killing his Orcs conquering a Village
+
+### Beserker Orc 
+# Rarely found and some Orcs can transform
+# Some Orcs can reach a point of ANger where they become completely instinctually and completely enraged and blackout
+
+## Orc
+# Base Orc can be covertered to friend 50% of the time not fully evil 
+
+######################### Fairy Forest 
+###### Blood Magic Queen 
+
+##### Blood Fairies 
+
+#### Blood Witchs
+
+### Dark Witchs   
+
+########### Menu
+# Functionality:
+# Attack
+# Block 
+# Flee 
+# Inventory
+
+########ABilities 
+# 2 Class abilities 
+# Weapon Ability(boosted Stats) ALL Stats Populated 
+# Companion Ability ALL STAT POPULATED 
+
+# Random enemies
+# Set Npc's
+# Set Enemies Stats, and Weapons
 ########################################JOURNAL#########################
 
 # 2 ways to grab data eithe rmake all numbered pairs and connect to id can do with prim and sec being declared
