@@ -16,12 +16,7 @@ A CLI App RPG where you must beat the system and conquer a world trying to conqu
 Type Into Terminal:
 
 1. pipenv install
-2. pipenv install sqlalchemy
-3. pipenv install PyInquirer
-4. pipenv install prompt_toolkit==1.0.14
-5. pipenv install pyfiglet
-6. pipenv install termcolor
-7. pipenv shell
+2. pipenv shell
 
 <h1>Run The Game</h1>
 Type Into the Terminal:

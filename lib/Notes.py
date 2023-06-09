@@ -95,6 +95,10 @@ pass
 # main menu available like pokemon
 # entire route based on chosen Quest from guild or hut after you pick world
 # End screen when win 
+
+# Save state 
+# delete character
+
 ########################################JOURNAL#########################
 
 # 2 ways to grab data eithe rmake all numbered pairs and connect to id can do with prim and sec being declared
