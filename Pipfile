@@ -6,9 +6,11 @@ name = "pypi"
 [packages]
 sqlalchemy = "2.0.15"
 ipdb = "0.13.9"
-alembic = "*"
-pyinquirer = "*"
-prompt-toolkit = "*"
+alembic = "1.11.1"
+pyinquirer = "1.0.3"
+prompt-toolkit = "==1.0.14"
+pyfiglet = "0.7"
+termcolor = "2.3.0"
 
 [dev-packages]
 
